@@ -1,0 +1,19 @@
+{
+  "name": "open-source-101-with-angular",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "stats": "node scripts/stats.mjs",
+    "prebuild": "node scripts/stats.mjs",
+    "predev": "node scripts/stats.mjs",
+    "preexport": "node scripts/stats.mjs",
+    "dev": "slide-ng dev --open",
+    "build": "slide-ng build",
+    "export": "slide-ng export",
+    "format": "slide-ng format"
+  },
+  "dependencies": {
+    "@slide-ng/core": "^1.0.0"
+  }
+}
