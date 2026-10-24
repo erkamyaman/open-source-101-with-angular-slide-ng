@@ -1,0 +1,17 @@
+theme: default
+colorSchema: dark
+navPosition: top-right
+languages:
+  en: slides.md
+  tr: slides.tr.md
+fonts:
+  sans: Inter
+  mono: DM Mono
+title: Open Source 101 with Angular
+favicon: /favicon.png
+info: |
+  How I started contributing to enterprise open source, and how you can do it too.
+drawings:
+  persist: false
+transition: fade
+duration: 35min

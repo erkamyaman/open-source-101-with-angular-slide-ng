@@ -1,18 +1,7 @@
 ---
-theme: default
-colorSchema: dark
-fonts:
-  sans: Inter
-  mono: DM Mono
 title: Angular ile Açık Kaynak 101
-favicon: /favicon.png
 info: |
   Kurumsal açık kaynağa nasıl katkı vermeye başladım ve sen de nasıl yapabilirsin.
-class: title-slide
-drawings:
-  persist: false
-transition: fade
-duration: 35min
 ---
 
 # Açık Kaynak 101<br><img src="/angular_wordmark_gradient.png" width="2560" height="800" style="display: inline-block; height: 1.5em; width: auto; vertical-align: 0; margin: -0.4em 0 -0.4em -0.2em;" alt="Angular" /> ile

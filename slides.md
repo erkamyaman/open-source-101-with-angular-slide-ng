@@ -1,22 +1,5 @@
 ---
-theme: default
-colorSchema: dark
-navPosition: top-right
-languages:
-  en: slides.md
-  tr: slides.tr.md
-fonts:
-  sans: Inter
-  mono: DM Mono
-title: Open Source 101 with Angular
-favicon: /favicon.png
-info: |
-  How I started contributing to enterprise open source, and how you can do it too.
 class: title-slide
-drawings:
-  persist: false
-transition: fade
-duration: 35min
 ---
 
 # Open Source 101<br>with <img src="/angular_wordmark_gradient.png" width="2560" height="800" style="display: inline-block; height: 1.5em; width: auto; vertical-align: 0; margin: -0.4em 0 -0.4em -0.2em;" alt="Angular" />
