@@ -11,6 +11,8 @@ const SECTIONS = [
   { from: 25, name: 'Bonus' },
 ];
 
+const TR_NAMES = ['Nasıl başladım', 'Ne göndermeli, ne geçmeli', 'Düzeltilecek şeyleri nerede bulmalı', 'Büyük projelere PR', 'İlk katkı', 'Bonus'];
+
 // Port of global-top.vue: the footer (author, section, slide count, progress bar) on every slide
 // except the first two and the last three, plus the `mouse-live` class on <html>: hover effects
 // only turn on once the mouse really moves (24px), and turn off again on every slide or click change.
@@ -40,6 +42,8 @@ export default class DeckGlobalTop {
   /** The slide this footer describes: the printed page in PDF export, else the slide on screen. */
   no = computed(() => this.printNo() ?? this.nav.no());
   private root = inject(DOCUMENT).documentElement;
+  private lang = signal(this.root.lang.toLowerCase().startsWith('tr') ? 'tr' : 'en');
+  private langWatch = new MutationObserver(() => this.lang.set(this.root.lang.toLowerCase().startsWith('tr') ? 'tr' : 'en'));
   private anchor: { x: number; y: number } | null = null;
 
   section = computed(() => {
@@ -49,7 +53,9 @@ export default class DeckGlobalTop {
     });
     if (found < 0) return null;
     const isBonus = SECTIONS[found].name === 'Bonus';
-    return { number: isBonus ? 'Bonus' : String(found + 1), name: isBonus ? 'Skills' : SECTIONS[found].name };
+    const isTr = this.lang() === 'tr';
+    const name = isTr ? TR_NAMES[found] : SECTIONS[found].name;
+    return { number: isBonus ? 'Bonus' : String(found + 1), name: isBonus ? (isTr ? 'Skill’ler' : 'Skills') : name };
   });
 
   private onMove = (e: MouseEvent) => {
@@ -66,6 +72,8 @@ export default class DeckGlobalTop {
       const page = host.closest<HTMLElement>('[data-slide-ng-no]');
       if (page) this.printNo.set(Number(page.dataset['slideNgNo']));
     });
+    this.langWatch.observe(this.root, { attributes: true, attributeFilter: ['lang'] });
+    inject(DestroyRef).onDestroy(() => this.langWatch.disconnect());
     const win = this.root.ownerDocument.defaultView!;
     win.addEventListener('mousemove', this.onMove, { passive: true });
     inject(DestroyRef).onDestroy(() => win.removeEventListener('mousemove', this.onMove));

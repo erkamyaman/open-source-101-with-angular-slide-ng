@@ -1,6 +1,10 @@
 ---
 theme: default
 colorSchema: dark
+navPosition: top-right
+languages:
+  en: slides.md
+  tr: slides.tr.md
 fonts:
   sans: Inter
   mono: DM Mono
