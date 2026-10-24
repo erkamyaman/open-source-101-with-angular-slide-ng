@@ -29,7 +29,6 @@ const TR_NAMES = ['Nasıl başladım', 'Ne göndermeli, ne geçmeli', 'Düzeltil
           <span class="deck-section">{{ s.number }} / {{ s.name }}</span>
         }
         <span class="deck-count">{{ no() }} / {{ nav.total }}</span>
-        <div class="deck-bar" [style.width.%]="(no() / nav.total) * 100"></div>
       </div>
     }
   `,

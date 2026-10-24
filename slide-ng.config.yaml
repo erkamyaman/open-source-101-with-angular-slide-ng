@@ -15,3 +15,8 @@ drawings:
   persist: false
 transition: fade
 duration: 35min
+progressBar:
+  position: bottom
+  height: 3
+  color: 'linear-gradient(90deg, #f11653, #8514f5)'
+  clicks: false

@@ -618,14 +618,6 @@
   border-radius: 50%;
 }
 
-.deck-bar {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  background: linear-gradient(90deg, #f11653, #8514f5);
-}
-
 .who-photo {
   padding: 5px;
   box-sizing: content-box;
