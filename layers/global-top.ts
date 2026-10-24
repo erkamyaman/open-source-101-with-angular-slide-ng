@@ -7,8 +7,8 @@ const SECTIONS = [
   { from: 13, name: 'What to send or skip' },
   { from: 14, name: 'Where to find things to fix' },
   { from: 17, name: 'PRs to big projects' },
-  { from: 24, name: 'First contribution' },
-  { from: 25, name: 'Bonus' },
+  { from: 25, name: 'First contribution' },
+  { from: 26, name: 'Bonus' },
 ];
 
 const TR_NAMES = ['Nasıl başladım', 'Ne göndermeli, ne geçmeli', 'Düzeltilecek şeyleri nerede bulmalı', 'Büyük projelere PR', 'İlk katkı', 'Bonus'];

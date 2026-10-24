@@ -332,12 +332,26 @@ disabled: true
 
 ---
 
+# The whole <span class="grad">loop</span>
+
+```mermaid {layout:'dagre', scale:1.5, theme:'base', themeVariables:{primaryColor:'#141414', primaryTextColor:'#ffffff', primaryBorderColor:'#f11653', lineColor:'#c9a0ff', secondaryColor:'#141414', tertiaryColor:'#141414', edgeLabelBackground:'#000000', fontFamily:'Inter'}}
+flowchart LR
+  A[Find] --> B[Prove]
+  B --> C[Prepare]
+  C --> D[Open the PR]
+  D --> E{Review}
+  E -->|feedback| C
+  E -->|approved| F[Merged]
+```
+
+---
+
 # Your first <span class="grad">contribution</span>
 
 <ol class="steps">
   <li slide-ng-click><span class="dot"></span><p>Pick a project <strong>you already use</strong></p></li>
   <li slide-ng-click><span class="dot"></span><p>Read the contributing guide</p></li>
-  <li slide-ng-click><span class="dot"></span><p>Find a <strong class="scribble">factual</strong> error in the docs and prove it</p></li>
+  <li slide-ng-click><span class="dot"></span><p>Find a <strong slide-ng-mark.red.underline="3">factual</strong> error in the docs and prove it</p></li>
   <li slide-ng-click><span class="dot"></span><p>Open a small PR</p></li>
   <li slide-ng-click><span class="dot"></span><p>Be patient. <strong>Reviews might take days</strong></p></li>
   <li slide-ng-click><span class="dot"></span><p>Expect feedback. <strong>It is not rejection</strong></p></li>

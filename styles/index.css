@@ -1812,6 +1812,21 @@ html.mouse-live .cards:has(.card:hover) .card.ghost.slidev-vclick-current:not(:h
   box-sizing: border-box;
 }
 
+.steps li.slidev-vclick-prior .dot {
+  border-color: #f11653;
+  background: #f11653;
+}
+
+.steps li.slidev-vclick-current .dot {
+  border: 0;
+  background-origin: border-box;
+  background-clip: border-box;
+}
+
+.steps .dot {
+  box-sizing: border-box;
+}
+
 .steps .scribble {
   position: relative;
   display: inline-block;

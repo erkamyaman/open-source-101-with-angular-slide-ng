@@ -334,12 +334,26 @@ disabled: true
 
 ---
 
+# Tüm <span class="grad">döngü</span>
+
+```mermaid {layout:'dagre', scale:1.5, theme:'base', themeVariables:{primaryColor:'#141414', primaryTextColor:'#ffffff', primaryBorderColor:'#f11653', lineColor:'#c9a0ff', secondaryColor:'#141414', tertiaryColor:'#141414', edgeLabelBackground:'#000000', fontFamily:'Inter'}}
+flowchart LR
+  A[Bul] --> B[Kanıtla]
+  B --> C[Hazırla]
+  C --> D[PR aç]
+  D --> E{İnceleme}
+  E -->|geri bildirim| C
+  E -->|onay| F[Birleşti]
+```
+
+---
+
 # <span class="grad">İlk katkın</span>
 
 <ol class="steps">
   <li slide-ng-click><span class="dot"></span><p><strong>Zaten kullandığın</strong> bir proje seç</p></li>
   <li slide-ng-click><span class="dot"></span><p>Katkı rehberini oku</p></li>
-  <li slide-ng-click><span class="dot"></span><p>Dokümanda <strong class="scribble">olgusal</strong> bir hata bul ve kanıtla</p></li>
+  <li slide-ng-click><span class="dot"></span><p>Dokümanda <strong slide-ng-mark.red.underline="3">olgusal</strong> bir hata bul ve kanıtla</p></li>
   <li slide-ng-click><span class="dot"></span><p>Küçük bir PR aç</p></li>
   <li slide-ng-click><span class="dot"></span><p>Sabırlı ol. <strong>İncelemeler günler sürebilir</strong></p></li>
   <li slide-ng-click><span class="dot"></span><p>Geri bildirim bekle. <strong>Bu bir ret değil</strong></p></li>
