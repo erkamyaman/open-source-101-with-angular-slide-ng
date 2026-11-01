@@ -2,7 +2,10 @@ import { Component, computed, inject } from '@angular/core';
 import { ClicksContext } from 'slide-ng/lib/clicks';
 
 // Replaces Slidev's `$clicks` in markdown: put `<click-state #cs />` in a slide, then read `cs.n()` / `cs.level()`.
-@Component({ selector: 'click-state', template: '' })
+@Component({
+  selector: 'click-state',
+  templateUrl: './click-state.html',
+})
 export class ClickState {
   /** Clicks of the slide this element is in (Slidev: `$clicks`). */
   n = inject(ClicksContext).current;

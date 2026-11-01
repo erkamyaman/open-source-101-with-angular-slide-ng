@@ -18,20 +18,7 @@ const TR_NAMES = ['Nasıl başladım', 'Ne göndermeli, ne geçmeli', 'Düzeltil
 // only turn on once the mouse really moves (24px), and turn off again on every slide or click change.
 @Component({
   selector: 'deck-global-top',
-  template: `
-    @if (no() > 2 && no() < nav.total - 2) {
-      <div class="deck-footer">
-        <div class="deck-id">
-          <img src="/erkamyaman.jpg" alt="" />
-          <span>erKam</span>
-        </div>
-        @if (section(); as s) {
-          <span class="deck-section">{{ s.number }} / {{ s.name }}</span>
-        }
-        <span class="deck-count">{{ no() }} / {{ nav.total }}</span>
-      </div>
-    }
-  `,
+  templateUrl: './global-top.html',
 })
 export default class DeckGlobalTop {
   nav = inject(Nav);

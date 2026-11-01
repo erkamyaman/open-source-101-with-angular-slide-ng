@@ -5,11 +5,7 @@ import { Component, input, linkedSignal } from '@angular/core';
 @Component({
   selector: 'deck-counter',
   host: { class: 'flex w-min border border-main rounded-md' },
-  template: `
-    <button class="border-r border-main p-2 font-mono outline-none! hover:bg-gray-400/20" (click)="n.set(n() - 1)">-</button>
-    <span class="m-auto p-2">{{ n() }}</span>
-    <button class="border-l border-main p-2 font-mono outline-none! hover:bg-gray-400/20" (click)="n.set(n() + 1)">+</button>
-  `,
+  templateUrl: './deck-counter.html',
 })
 export class DeckCounter {
   count = input(0);

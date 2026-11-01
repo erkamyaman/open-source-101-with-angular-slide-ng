@@ -72,11 +72,7 @@ function layout(): Item[] {
 @Component({
   selector: 'angie-storm',
   host: { class: 'angie-storm' },
-  template: `
-    @for (item of items(); track item.src) {
-      <img [src]="item.src" alt="" [style]="item.style" />
-    }
-  `,
+  templateUrl: './angie-storm.html',
 })
 export class AngieStorm {
   items = signal<Item[]>(layout());

@@ -7,7 +7,7 @@ import stats from './stats.json';
 // In print (PDF export) and overview it shows the final number at once.
 @Component({
   selector: 'count-up',
-  template: `<span class="count-up" [style.width]="width()">{{ value() }}</span>{{ suffix() }}`,
+  templateUrl: './count-up.html',
 })
 export class CountUp {
   to = input<number>();
