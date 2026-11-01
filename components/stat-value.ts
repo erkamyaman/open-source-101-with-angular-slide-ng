@@ -6,7 +6,7 @@ export type StatKey = keyof typeof stats;
 // Port of Stat.vue: prints one number of stats.json (written by scripts/stats.mjs before dev and build).
 @Component({
   selector: 'stat-value',
-  template: '{{ value() }}',
+  templateUrl: './stat-value.html',
 })
 export class StatValue {
   k = input.required<StatKey>();
