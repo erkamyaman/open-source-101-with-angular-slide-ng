@@ -26,7 +26,7 @@ npm run export   # PDF (needs Chromium: CHROME_PATH, and --no-sandbox as root)
 (set `GITHUB_TOKEN` to avoid the rate limit). When the API fails it keeps the last saved numbers,
 or copies `scripts/stats.fallback.json`. Calling `slide-ng` directly skips the script.
 
-It uses `@slide-ng/core` 1.0.0 from npm, so `npm install` is all it needs.
+It uses `@slide-ng/core` 3.0 from npm, so `npm install` is all it needs.
 
 ## Differences from the Slidev version
 
