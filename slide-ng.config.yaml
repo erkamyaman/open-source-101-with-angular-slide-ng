@@ -26,3 +26,5 @@ author: erKam
 keywords: [angular, open source, contributing]
 exportFilename: open-source-101-with-angular
 download: /open-source-101-with-angular.pdf
+browser:
+  proxy: https://oss-101-with-ng.netlify.app/proxy?url=%s
