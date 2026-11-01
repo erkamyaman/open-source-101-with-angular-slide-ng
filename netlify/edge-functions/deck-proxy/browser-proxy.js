@@ -26,7 +26,7 @@ const SANDBOX =
 const MEMORY = `(()=>{const m=()=>{const d=new Map();return{get length(){return d.size},key:(i)=>[...d.keys()][i]??null,getItem:(k)=>d.has(String(k))?d.get(String(k)):null,setItem:(k,v)=>{d.set(String(k),String(v))},removeItem:(k)=>{d.delete(String(k))},clear:()=>d.clear()}};for(const n of['localStorage','sessionStorage']){try{window[n].length}catch{Object.defineProperty(window,n,{value:m(),configurable:true})}}try{document.cookie}catch{const c=new Map();Object.defineProperty(Document.prototype,'cookie',{configurable:true,get:()=>[...c].map(([k,v])=>k+'='+v).join('; '),set:(s)=>{const p=String(s).split(';')[0],i=p.indexOf('=');if(i>0)c.set(p.slice(0,i).trim(),p.slice(i+1).trim())}})}})();`;
 
 const LINKS = (proxyUrl) =>
-  `(()=>{const p=${JSON.stringify(proxyUrl).replace(/</g, '\\u003c')};const to=(h)=>{if(!h||h.startsWith('#'))return null;let u;try{u=new URL(h,document.baseURI)}catch{return null}return /^https?:$/.test(u.protocol)&&!u.href.startsWith(p)?p+'?url='+encodeURIComponent(u.href):null};const fix=(a)=>{const t=to(a.getAttribute('href'));if(t)a.setAttribute('href',t)};const scan=(n)=>{if(n.nodeType!==1)return;if(n.matches('a[href],area[href]'))fix(n);n.querySelectorAll('a[href],area[href]').forEach(fix)};new MutationObserver((ms)=>{for(const m of ms){if(m.type==='attributes')m.target.matches('a,area')&&fix(m.target);else m.addedNodes.forEach(scan)}}).observe(document,{subtree:true,childList:true,attributes:true,attributeFilter:['href']});for(const t of['pointerdown','mousedown','focusin','click'])addEventListener(t,(e)=>{const a=e.target instanceof Element&&e.target.closest('a[href],area[href]');if(a)fix(a)},true)})();`;
+  `(()=>{const p=${JSON.stringify(proxyUrl).replace(/</g, '\\u003c')};const to=(h)=>{if(!h||h.startsWith('#'))return null;let u;try{u=new URL(h,document.baseURI)}catch{return null}return /^https?:$/.test(u.protocol)&&!u.href.startsWith(p)?p+'?url='+encodeURIComponent(u.href):null};const fix=(a)=>{const t=to(a.getAttribute('href'));if(t)a.setAttribute('href',t)};const scan=(n)=>{if(n.nodeType!==1)return;if(n.matches('a[href],area[href]'))fix(n);n.querySelectorAll('a[href],area[href]').forEach(fix)};new MutationObserver((ms)=>{for(const m of ms){if(m.type==='attributes')m.target.matches('a,area')&&fix(m.target);else m.addedNodes.forEach(scan)}}).observe(document,{subtree:true,childList:true,attributes:true,attributeFilter:['href']});addEventListener('DOMContentLoaded',()=>scan(document.documentElement));for(const t of['pointerdown','mousedown','focusin','click'])addEventListener(t,(e)=>{const a=e.target instanceof Element&&e.target.closest('a[href],area[href]');if(a)fix(a)},true)})();`;
 
 const PRIVATE_V4 =
   /^(0|10|127)\.|^169\.254\.|^172\.(1[6-9]|2\d|3[01])\.|^192\.168\.|^100\.(6[4-9]|[7-9]\d|1[01]\d|12[0-7])\./;
@@ -79,7 +79,10 @@ function targetOf(self) {
   return web(self.searchParams.get('url') ?? '');
 }
 
+const NO_SCRIPTS = new Set(['search.brave.com']);
+
 export function rewriteHtml(html, target, through) {
+  const quiet = NO_SCRIPTS.has(target.hostname);
   const escape = (s) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
   const own = /<base\b[^>]*\shref\s*=\s*(["'])(.*?)\1/i.exec(html)?.[2];
   const baseUrl = (own && web(own.replace(/&amp;/g, '&'), target)) || target;
@@ -122,8 +125,16 @@ export function rewriteHtml(html, target, through) {
   };
   let out = html.replace(
     /(<(script|style|textarea|title)\b[^>]*>)([\s\S]*?)(<\/\2\s*>)|<!--[\s\S]*?-->|<[a-z][^>"']*(?:(?:"[^">]*"|'[^'>]*')[^>"']*)*>/gi,
-    (whole, open, _name, body, close) =>
-      open ? open + body + close : whole.startsWith('<!--') ? whole : tag(whole),
+    (whole, open, name, body, close) =>
+      open
+        ? quiet && name.toLowerCase() === 'script'
+          ? ''
+          : open + body + close
+        : whole.startsWith('<!--')
+          ? whole
+          : quiet && /^<link\b[^>]*\brel\s*=\s*["']?modulepreload/i.test(whole)
+            ? ''
+            : tag(whole),
   );
   const base = `<script>${MEMORY}${LINKS(through(null))}</script><base href="${escape(baseUrl.href)}">`;
   const head = /<head(\s[^>]*)?>/i.exec(out);
