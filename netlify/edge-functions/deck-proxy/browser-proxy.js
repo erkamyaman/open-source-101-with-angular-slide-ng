@@ -158,7 +158,9 @@ export async function proxy(request, { decks = [], fetch: get = fetch } = {}) {
   try {
     from = referer ? new URL(referer).origin : '';
   } catch {}
-  if (allowed.length && from !== self.origin && !allowed.includes(from))
+  const framed =
+    !referer && /^(iframe|frame|document)$/.test(request.headers.get('sec-fetch-dest') ?? '');
+  if (allowed.length && from !== self.origin && !allowed.includes(from) && !framed)
     return text(403, 'This proxy only answers its own decks.');
 
   const through = (u) =>
