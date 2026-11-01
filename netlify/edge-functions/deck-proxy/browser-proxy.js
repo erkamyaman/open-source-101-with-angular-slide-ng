@@ -44,6 +44,12 @@ export function isPrivateHost(hostname) {
   return false;
 }
 
+const searchPage = (action, target) =>
+  new Response(
+    `<!doctype html><meta charset="utf-8"><title>Brave Search</title><body style="margin:0;height:100vh;display:grid;place-content:center;background:#1b1b1f;font:16px system-ui"><form action="${action}"><input type="hidden" name="${FORM_FIELD}" value="${target}"><input name="q" autofocus placeholder="Search Brave" style="width:min(70vw,520px);padding:12px 18px;border-radius:999px;border:0;font:inherit"></form></body>`,
+    { headers: { 'content-type': 'text/html; charset=utf-8', 'content-security-policy': SANDBOX } },
+  );
+
 const text = (status, body) =>
   new Response(body, { status, headers: { 'content-type': 'text/plain; charset=utf-8' } });
 
@@ -143,6 +149,8 @@ export async function proxy(request, { decks = [], fetch: get = fetch } = {}) {
 
   const through = (u) =>
     `${self.origin}${self.pathname}${u ? `?url=${encodeURIComponent(u.href)}` : ''}`;
+  if (target.hostname === 'search.brave.com' && target.pathname === '/' && !target.search)
+    return searchPage(through(null), 'https://search.brave.com/search');
   const headers = new Headers();
   for (const name of SEND) {
     const value = request.headers.get(name);
