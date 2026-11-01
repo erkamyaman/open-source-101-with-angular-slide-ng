@@ -23,7 +23,10 @@ const FORM_FIELD = '__slide_ng_url';
 const SANDBOX =
   'sandbox allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-modals allow-downloads';
 
-const MEMORY = `<script>(()=>{const m=()=>{const d=new Map();return{get length(){return d.size},key:(i)=>[...d.keys()][i]??null,getItem:(k)=>d.has(String(k))?d.get(String(k)):null,setItem:(k,v)=>{d.set(String(k),String(v))},removeItem:(k)=>{d.delete(String(k))},clear:()=>d.clear()}};for(const n of['localStorage','sessionStorage']){try{window[n].length}catch{Object.defineProperty(window,n,{value:m(),configurable:true})}}try{document.cookie}catch{const c=new Map();Object.defineProperty(Document.prototype,'cookie',{configurable:true,get:()=>[...c].map(([k,v])=>k+'='+v).join('; '),set:(s)=>{const p=String(s).split(';')[0],i=p.indexOf('=');if(i>0)c.set(p.slice(0,i).trim(),p.slice(i+1).trim())}})}})()</script>`;
+const MEMORY = `(()=>{const m=()=>{const d=new Map();return{get length(){return d.size},key:(i)=>[...d.keys()][i]??null,getItem:(k)=>d.has(String(k))?d.get(String(k)):null,setItem:(k,v)=>{d.set(String(k),String(v))},removeItem:(k)=>{d.delete(String(k))},clear:()=>d.clear()}};for(const n of['localStorage','sessionStorage']){try{window[n].length}catch{Object.defineProperty(window,n,{value:m(),configurable:true})}}try{document.cookie}catch{const c=new Map();Object.defineProperty(Document.prototype,'cookie',{configurable:true,get:()=>[...c].map(([k,v])=>k+'='+v).join('; '),set:(s)=>{const p=String(s).split(';')[0],i=p.indexOf('=');if(i>0)c.set(p.slice(0,i).trim(),p.slice(i+1).trim())}})}})();`;
+
+const LINKS = (proxyUrl) =>
+  `(()=>{const p=${JSON.stringify(proxyUrl).replace(/</g, '\\u003c')};addEventListener('click',(e)=>{if(e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;const a=e.target instanceof Element&&e.target.closest('a[href]');if(!a)return;let u;try{u=new URL(a.getAttribute('href'),document.baseURI)}catch{return}if(!/^https?:$/.test(u.protocol)||u.href.startsWith(p))return;e.preventDefault();e.stopImmediatePropagation();location.href=p+'?url='+encodeURIComponent(u.href)},true)})();`;
 
 const PRIVATE_V4 =
   /^(0|10|127)\.|^169\.254\.|^172\.(1[6-9]|2\d|3[01])\.|^192\.168\.|^100\.(6[4-9]|[7-9]\d|1[01]\d|12[0-7])\./;
@@ -122,7 +125,7 @@ export function rewriteHtml(html, target, through) {
     (whole, open, _name, body, close) =>
       open ? open + body + close : whole.startsWith('<!--') ? whole : tag(whole),
   );
-  const base = `${MEMORY}<base href="${escape(baseUrl.href)}">`;
+  const base = `<script>${MEMORY}${LINKS(through(null))}</script><base href="${escape(baseUrl.href)}">`;
   const head = /<head(\s[^>]*)?>/i.exec(out);
   return head
     ? out.slice(0, head.index + head[0].length) + base + out.slice(head.index + head[0].length)
