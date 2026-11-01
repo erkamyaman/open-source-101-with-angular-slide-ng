@@ -26,7 +26,18 @@ npm run export   # PDF (needs Chromium: CHROME_PATH, and --no-sandbox as root)
 (set `GITHUB_TOKEN` to avoid the rate limit). When the API fails it keeps the last saved numbers,
 or copies `scripts/stats.fallback.json`. Calling `slide-ng` directly skips the script.
 
-It uses `@slide-ng/core` 3.0 from npm, so `npm install` is all it needs.
+It uses `@slide-ng/core` 3.1 from npm, so `npm install` is all it needs.
+
+## Publishing
+
+- **GitHub Pages:** `.github/workflows/deploy.yml` builds and publishes every push to `main`, at
+  <https://erkamyaman.github.io/open-source-101-with-angular-slide-ng/>. There the deck browser (`b`) loads pages directly:
+  search uses Bing, and sites that refuse to be framed (DuckDuckGo, GitHub) offer **Open in window**.
+- **Netlify:** `netlify.toml` builds the same site, and `netlify/edge-functions/deck-proxy/` is the deck browser's proxy
+  (slide.ng's sample, `browser-proxy.js` next to it). Once the Netlify site exists, set `DECK_ORIGINS` there to the deck's
+  address (the Netlify one, and `https://erkamyaman.github.io` to use it from GitHub Pages too) and add
+  `browser: { proxy: https://<site>.netlify.app/proxy?url=%s }` to `slide-ng.config.yaml`. Then DuckDuckGo, GitHub and the
+  other sites show inside the deck on both.
 
 ## Differences from the Slidev version
 
