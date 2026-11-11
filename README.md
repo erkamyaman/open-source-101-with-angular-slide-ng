@@ -1,50 +1,32 @@
-# Open Source 101 with Angular (slide.ng)
+# Open Source 101 with Angular
 
-The talk "Open Source 101 with Angular", ported from Slidev to [slide.ng](https://github.com/slide-ng/slide.ng).
+How I started contributing to enterprise open source, and how you can do it too. A 35 minute talk in English and Turkish, built with [slide.ng](https://github.com/slide-ng/slide.ng).
+
+- **Slides:** <https://oss-101-with-ng.netlify.app/>
+- **Mirror:** <https://erkamyaman.github.io/open-source-101-with-angular-slide-ng/>
+- **PDF:** [open-source-101-with-angular.pdf](open-source-101-with-angular.pdf)
+
+Press `b` during the talk to open websites inside the deck.
+
+## Run it
 
 ```bash
 npm install
-npm run dev      # fetches stats, then http://localhost:4230 (presenter: /presenter)
-npm run build    # fetches stats, then a static site in dist/
-npm run export   # PDF (needs Chromium: CHROME_PATH, and --no-sandbox as root)
+npm run dev      # http://localhost:4230, presenter at /presenter
+npm run build    # static site in dist/
+npm run export   # PDF, needs Chromium
 ```
 
-## What is where
+`dev`, `build` and `export` first fetch the Angular PR and commit numbers shown on the slides. Set `GITHUB_TOKEN` to avoid the GitHub rate limit. If the request fails, the last saved numbers are used.
 
-| Slidev original | here |
-| --- | --- |
-| `slides.md` | `slides.md` (`v-click` is `slide-ng-click`, icons are `<carbon-name />`, `comark` removed) |
-| `components/CountUp.vue`, `Stat.vue`, `AngieStorm.vue`, `Counter.vue` | `components/count-up.ts`, `stat-value.ts`, `angie-storm.ts`, `deck-counter.ts` |
-| `$clicks` in the agenda slide | `components/click-state.ts`, read through `<click-state #cs />` |
-| `global-top.vue` | `layers/global-top.ts` (footer, section name, progress bar, `mouse-live` hover switch) |
-| `style.css` | `styles/index.css` (same rules, plus a short "port" section at the end) |
-| `stats.json` | `components/stats.json` (components import it at build time) |
-| `scripts/stats.mjs` | same script, now writes `components/stats.json`; runs before `dev`, `build` and `export` through `npm run` |
-| `public/`, `pages/`, `snippets/` | unchanged |
+## Files
 
-`scripts/stats.mjs` asks the GitHub API for the merged PRs and commits in `angular/angular`
-(set `GITHUB_TOKEN` to avoid the rate limit). When the API fails it keeps the last saved numbers,
-or copies `scripts/stats.fallback.json`. Calling `slide-ng` directly skips the script.
-
-It uses `@slide-ng/core` 3.1 from npm, so `npm install` is all it needs.
+- `slides.md`, `slides.tr.md`: the talk in English and Turkish
+- `components/`: counters, stats and the Angie wall
+- `layers/global-top.*`: the footer with section and slide number
+- `public/`: pictures and logos
+- `netlify/edge-functions/deck-proxy/`: the proxy that lets the deck show sites that refuse to be framed
 
 ## Publishing
 
-- **GitHub Pages:** `.github/workflows/deploy.yml` builds and publishes every push to `main`, at
-  <https://erkamyaman.github.io/open-source-101-with-angular-slide-ng/>. There the deck browser (`b`) loads pages directly:
-  search uses Bing, and sites that refuse to be framed (DuckDuckGo, GitHub) offer **Open in window**.
-- **Netlify:** `netlify.toml` builds the same site, and `netlify/edge-functions/deck-proxy/` is the deck browser's proxy
-  (slide.ng's sample, `browser-proxy.js` next to it). Once the Netlify site exists, set `DECK_ORIGINS` there to the deck's
-  address (the Netlify one, and `https://erkamyaman.github.io` to use it from GitHub Pages too) and add
-  `browser: { proxy: https://<site>.netlify.app/proxy?url=%s }` to `slide-ng.config.yaml`. Then DuckDuckGo, GitHub and the
-  other sites show inside the deck on both.
-
-## Differences from the Slidev version
-
-- `# Hi, I’m erKam` has the curly apostrophe typed in (slide.ng does not convert quotes).
-- `{{ erKam | kæm }}` in the code sample is written with `&#123;` / `&#125;` entities (no `v-pre`).
-- One `&ngsp;` in the "What gets merged" title keeps the space between two spans (Angular drops whitespace-only text between elements).
-- The end of `styles/index.css` restores Slidev 53's code-block and inline-code defaults, sizes the
-  icons (they are `<span>`s here, so `.rows span` matched them) and turns off `overflow: auto` on the `<pre>` of slide 2.
-- `layers/global-top.ts` reads the slide number of the printed page in PDF export, so the footer is in the PDF too.
-- The Angie wall on slide 9 is random, as in the original.
+Every push to `main` deploys to both Netlify and GitHub Pages.

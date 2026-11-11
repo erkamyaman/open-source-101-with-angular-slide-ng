@@ -52,7 +52,7 @@ function layout(): Item[] {
     if (!spot) return;
     placed.push({ ...spot, r: size * 0.44 });
     out.push({
-      src: `/angie/all/${pose}.svg`,
+      src: `angie/all/${pose}.svg`,
       style: {
         left: `${((spot.x - size / 2) / W) * 100}%`,
         top: `${((spot.y - size / 2) / H) * 100}%`,
