@@ -37,6 +37,7 @@ class: who-slide
   <li><p><img class="logo" src="/logos/angular.gif" alt="" /><span class="txt"><strong>Angular</strong>’a katkı veriyorum</span></p></li>
   <li><p><img class="logo" src="/logos/pangular-animated.svg" alt="" /><span class="txt"><strong>Pangular Inspector</strong>’ı geliştiriyorum</span></p></li>
   <li><p><img class="logo" src="/logos/ng-native.svg" alt="" /><span class="txt"><strong>Angular Native</strong>’e katkı veriyorum</span></p></li>
+  <li><p><img class="logo" src="/logos/claude.png" alt="" /><span class="txt"><strong>Claude for Open Source</strong> programına kabul edildim</span></p></li>
 </ul>
 
 </div>
