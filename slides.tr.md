@@ -194,6 +194,15 @@ disabled: true
 </div>
 
 ---
+layout: default
+class: statement-slide wide-title claude-program-slide
+---
+
+# <span class="grad">Claude for Open Source</span><br>programına kabul edildim
+
+<p class="statement-sub">Angular dokümanlarına ve angular-docs.tr’ye katkılarım sayesinde 6 ay Claude Max 20x kazandım.</p>
+
+---
 class: compact-slide
 ---
 

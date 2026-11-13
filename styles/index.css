@@ -2118,3 +2118,7 @@ html.mouse-live .cards:has(.card:hover) .card.slidev-vclick-current:not(:hover) 
 .slidev-layout.compact-slide .docs-alert {
   padding-block: 0.65rem;
 }
+
+.slidev-layout.claude-program-slide h1 {
+  font-size: 3.5rem;
+}

@@ -188,6 +188,15 @@ disabled: true
 </div>
 
 ---
+layout: default
+class: statement-slide wide-title claude-program-slide
+---
+
+# I joined the<br><span class="grad">Claude for Open Source</span> Program
+
+<p class="statement-sub">Six months of Claude Max 20x for my work on the Angular docs and angular-docs.tr.</p>
+
+---
 
 # What gets <span class="grad">merged</span> <span class="title-sub"><stat-value k="prs" /> PRs, <stat-value k="commits" /> commits so far</span>
 

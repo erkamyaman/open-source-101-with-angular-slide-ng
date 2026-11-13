@@ -4,11 +4,11 @@ import { Nav } from 'slide-ng/lib/nav';
 
 const SECTIONS = [
   { from: 4, name: 'How I started' },
-  { from: 13, name: 'What to send or skip' },
-  { from: 14, name: 'Where to find things to fix' },
-  { from: 17, name: 'PRs to big projects' },
-  { from: 25, name: 'First contribution' },
-  { from: 26, name: 'Bonus' },
+  { from: 14, name: 'What to send or skip' },
+  { from: 15, name: 'Where to find things to fix' },
+  { from: 18, name: 'PRs to big projects' },
+  { from: 26, name: 'First contribution' },
+  { from: 27, name: 'Bonus' },
 ];
 
 const TR_NAMES = ['Nasıl başladım', 'Ne mergeleniyor?', 'Bug’ları nerede buluyorum?', 'Büyük projelere PR', 'İlk katkı', 'Bonus'];
