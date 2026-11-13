@@ -191,7 +191,7 @@ disabled: true
 
 ---
 
-# Ne <span class="grad">birleştirilir</span>&ngsp;<span class="title-sub">şu ana kadar <stat-value k="prs" /> PR, <stat-value k="commits" /> commit</span>
+# Ne <span class="grad">birleştirilir</span> <span class="title-sub">şu ana kadar <stat-value k="prs" /> PR, <stat-value k="commits" /> commit</span>
 
 <div class="merge-grid">
   <div slide-ng-click class="merge-col yes">
@@ -288,7 +288,7 @@ disabled: true
 
 ---
 
-# PR’ı açmadan önce <span class="grad">kanıtla</span>&ngsp;<span class="title-sub">(en iyi topluluk üyesi ol)</span>
+# PR’ı açmadan önce <span class="grad">kanıtla</span> <span class="title-sub">(en iyi topluluk üyesi ol)</span>
 
 <div class="cards cols-3">
   <div slide-ng-click class="card"><p class="k">Adım 1</p><p class="big sm">Yeniden üret</p><p class="txt">iddiayı kendin dene</p></div>

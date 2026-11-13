@@ -189,7 +189,7 @@ disabled: true
 
 ---
 
-# What gets <span class="grad">merged</span>&ngsp;<span class="title-sub"><stat-value k="prs" /> PRs, <stat-value k="commits" /> commits so far</span>
+# What gets <span class="grad">merged</span> <span class="title-sub"><stat-value k="prs" /> PRs, <stat-value k="commits" /> commits so far</span>
 
 <div class="merge-grid">
   <div slide-ng-click class="merge-col yes">
@@ -286,7 +286,7 @@ disabled: true
 
 ---
 
-# <span class="grad">Prove it</span> before you open it&ngsp;<span class="title-sub">(be the best citizen)</span>
+# <span class="grad">Prove it</span> before you open it <span class="title-sub">(be the best citizen)</span>
 
 <div class="cards cols-3">
   <div slide-ng-click class="card"><p class="k">Step 1</p><p class="big sm">Reproduce</p><p class="txt">the claim with a command</p></div>
