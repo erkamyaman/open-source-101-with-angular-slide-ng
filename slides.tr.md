@@ -33,9 +33,9 @@ class: who-slide
 
 <ul class="rows who-rows">
   <li><p><carbon-building class="logo" /><span class="txt"><strong>Kolay Randevu / SalonAppy</strong>’de çalışıyorum</span></p></li>
-  <li><p><img class="logo" src="/logos/slide-ng.svg" alt="" /><span class="txt">Angular’la slayt hazırlamak için <strong>slide.ng</strong>’yi geliştiriyorum</span></p></li>
-  <li><p><img class="logo" src="/logos/angular.gif" alt="" /><span class="txt"><strong>Angular</strong>’ın dokümanlarına ve docs-infra’ya katkı veriyorum</span></p></li>
-  <li><p><img class="logo" src="/logos/pangular-animated.svg" alt="" /><span class="txt">Santosh Yadav ile <strong>Pangular Inspector</strong> geliştiriyorum</span></p></li>
+  <li><p><img class="logo" src="/logos/slide-ng.svg" alt="" /><span class="txt"><strong>slide.ng</strong>’yi geliştiriyorum</span></p></li>
+  <li><p><img class="logo" src="/logos/angular.gif" alt="" /><span class="txt"><strong>Angular</strong>’a katkı veriyorum</span></p></li>
+  <li><p><img class="logo" src="/logos/pangular-animated.svg" alt="" /><span class="txt"><strong>Pangular Inspector</strong>’ı geliştiriyorum</span></p></li>
   <li><p><img class="logo" src="/logos/ng-native.svg" alt="" /><span class="txt"><strong>Angular Native</strong>’e katkı veriyorum</span></p></li>
 </ul>
 
