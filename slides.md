@@ -192,7 +192,7 @@ layout: default
 class: statement-slide wide-title claude-program-slide
 ---
 
-# I joined the<br><img class="claude-title-logo" src="/logos/claude.svg" width="573" height="125" alt="Claude" /> for Open Source Program
+# I joined the<br><img class="claude-title-logo" src="/logos/claude-icon.svg" width="125" height="125" alt="" /> <strong class="claude-name">Claude</strong> for Open Source Program
 
 <p class="statement-sub">Six months of Claude Max 20x for my work on the Angular docs and angular-docs.tr.</p>
 

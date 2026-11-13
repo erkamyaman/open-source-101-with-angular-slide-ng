@@ -2130,6 +2130,6 @@ html.mouse-live .cards:has(.card:hover) .card.slidev-vclick-current:not(:hover) 
   vertical-align: -0.04em;
 }
 
-.claude-name {
+.slidev-layout strong.claude-name {
   color: #d97757;
 }
