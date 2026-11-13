@@ -277,7 +277,7 @@ class: compact-slide
 
 ---
 
-# İyi bir <span class="grad">topluluk üyesi</span> ol
+# İyi bir <span class="grad">community üyesi</span> ol
 
 <div class="cards cols-2">
   <div slide-ng-click class="card"><p class="k">Review</p><p class="big sm">Review için ping atma</p><p class="txt">Ekibin PR’a bakmasını bekle</p></div>
@@ -288,7 +288,7 @@ class: compact-slide
 
 ---
 
-# Daha iyi bir <span class="grad">topluluk üyesi</span> ol
+# Daha iyi bir <span class="grad">community üyesi</span> ol
 
 <div class="cards cols-3">
   <div slide-ng-click class="card hot span3"><p class="k">AI</p><p class="big">Gönderdiğin PR’ın arkasında dur</p><p class="txt">AI’a yazdırdığın PR ilk bakışta iyi görünebilir. Açmadan önce kodu anla ve düzeltmenin çalıştığını kendin kontrol et.</p></div>
