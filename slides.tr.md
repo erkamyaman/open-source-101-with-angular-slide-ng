@@ -106,7 +106,7 @@ class: statement-slide
 
 <p class="statement-label">Sonra ne oldu?</p>
 
-# <span class="grad"><count-up k="prs" /></span> PR’ım merge oldu
+# <span class="grad"><count-up k="prs" /></span> PR’ım mergelendi
 
 <p class="statement-sub"><code>angular/angular</code> reposunda</p>
 
@@ -117,9 +117,9 @@ class: statement-slide
 
 <p class="statement-label">Sonra ne oldu?</p>
 
-# En çok içime sinen işler <span class="grad">docs-infra</span> tarafında
+# En iyi işlerim<br><span class="grad" style="white-space: nowrap;">docs-infra</span>’da
 
-<p class="statement-sub">Dokümanlarda ve framework’te de ufak tefek düzeltmeler yaptım</p>
+<p class="statement-sub">Dokümanlarda ve framework’te küçük düzeltmeler</p>
 ---
 layout: default
 class: statement-slide wide-title
