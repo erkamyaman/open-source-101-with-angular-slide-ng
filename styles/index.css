@@ -2123,11 +2123,11 @@ html.mouse-live .cards:has(.card:hover) .card.slidev-vclick-current:not(:hover) 
   font-size: 3.5rem;
 }
 
-.claude-program-slide > img {
-  display: block;
-  width: 8rem;
-  height: auto;
-  margin-bottom: 0.75rem;
+.claude-program-slide .claude-title-logo {
+  display: inline-block;
+  width: auto;
+  height: 0.85em;
+  vertical-align: -0.04em;
 }
 
 .claude-name {

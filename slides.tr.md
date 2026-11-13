@@ -199,9 +199,7 @@ layout: default
 class: statement-slide wide-title claude-program-slide
 ---
 
-<img src="/logos/claude.svg" width="573" height="125" alt="Claude" />
-
-# <span class="claude-name">Claude</span> for Open Source<br>programına kabul edildim
+# <img class="claude-title-logo" src="/logos/claude.svg" width="573" height="125" alt="Claude" /> for Open Source<br>programına kabul edildim
 
 <p class="statement-sub">Angular dokümanlarına ve angular-docs.tr’ye katkılarım için program kapsamında 6 ay Claude Max 20x erişimi sağlandı.</p>
 
