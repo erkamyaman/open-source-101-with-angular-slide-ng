@@ -2133,3 +2133,24 @@ html.mouse-live .cards:has(.card:hover) .card.slidev-vclick-current:not(:hover) 
 .slidev-layout strong.claude-name {
   color: #d97757;
 }
+
+.burnout-mark .first-label {
+  left: 55%;
+  top: 32%;
+}
+
+.burnout-mark .first-arrow {
+  left: 59%;
+  top: 40%;
+  height: 15%;
+}
+
+.burnout-mark .first-circle {
+  left: 61%;
+  top: 61%;
+  width: 8%;
+}
+
+.burnout-mark:not(.slidev-vclick-hidden) .burnout-face {
+  animation-delay: 0.65s;
+}
