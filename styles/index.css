@@ -2122,3 +2122,11 @@ html.mouse-live .cards:has(.card:hover) .card.slidev-vclick-current:not(:hover) 
 .slidev-layout.claude-program-slide h1 {
   font-size: 3.5rem;
 }
+
+.claude-program-slide > img {
+  display: block;
+  width: 8rem;
+  height: auto;
+  margin-bottom: 0.75rem;
+  border-radius: 0.35rem;
+}

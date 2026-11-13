@@ -198,9 +198,11 @@ layout: default
 class: statement-slide wide-title claude-program-slide
 ---
 
+<img src="/logos/claude.png" width="240" height="76" alt="Claude" />
+
 # <span class="grad">Claude for Open Source</span><br>programına kabul edildim
 
-<p class="statement-sub">Angular dokümanlarına ve angular-docs.tr’ye katkılarım sayesinde 6 ay Claude Max 20x kazandım.</p>
+<p class="statement-sub">Angular dokümanlarına ve angular-docs.tr’ye katkılarım için program kapsamında 6 ay Claude Max 20x erişimi sağlandı.</p>
 
 ---
 class: compact-slide
