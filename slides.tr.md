@@ -49,17 +49,19 @@ Kısa tut, sonra geç.
 -->
 
 ---
+clicksStart: 1
+---
 
 # Bugün
 
 <click-state #cs />
 
 <div class="bento" [class]="'s' + cs.level()">
-  <div slide-ng-click class="b b1" [class.hot]="cs.n() === 1"><span class="n">1</span><p>Nasıl <span class="gt">başladım</span></p></div>
-  <div slide-ng-click class="b b2" [class.hot]="cs.n() === 2"><span class="n">2</span><p><span class="gt">Hangi PR’lar</span> mergeleniyor?</p></div>
-  <div slide-ng-click class="b b3" [class.hot]="cs.n() === 3"><span class="n">3</span><p>Düzeltecek <span class="gt">bug’ları nasıl buluyorum?</span></p></div>
-  <div slide-ng-click class="b b4" [class.hot]="cs.n() === 4"><span class="n">4</span><p><span class="gt">Büyük projelere</span> PR açmak</p></div>
-  <div slide-ng-click class="b b5" [class.hot]="cs.n() >= 5"><span class="n">5</span><p>Sizin ilk <span class="gt">contribution’ınız</span></p></div>
+  <div class="b b1" [class.hot]="cs.level() === 1"><span class="n">1</span><p>Nasıl <span class="gt">başladım</span></p></div>
+  <div slide-ng-click="2" class="b b2" [class.hot]="cs.n() === 2"><span class="n">2</span><p><span class="gt">Hangi PR’lar</span> mergeleniyor?</p></div>
+  <div slide-ng-click="3" class="b b3" [class.hot]="cs.n() === 3"><span class="n">3</span><p>Düzeltecek <span class="gt">bug’ları nasıl buluyorum?</span></p></div>
+  <div slide-ng-click="4" class="b b4" [class.hot]="cs.n() === 4"><span class="n">4</span><p><span class="gt">Büyük projelere</span> PR açmak</p></div>
+  <div slide-ng-click="5" class="b b5" [class.hot]="cs.n() >= 5"><span class="n">5</span><p>Sizin ilk <span class="gt">contribution’ınız</span></p></div>
 </div>
 
 ---
