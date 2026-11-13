@@ -127,7 +127,7 @@ class: statement-slide wide-title
 
 <p class="statement-label">Sonra ne oldu?</p>
 
-# <span class="grad">Angular</span> ekibinden<br />biri bana yazdı
+# <span class="grad">Angular</span> ekibinden biri<br />LinkedIn’den bana ulaştı
 
 <p class="statement-sub" style="max-width: 40ch">Matthieu Riegler, Angular’ın maskotu Angie’yi angular.dev’e eklememi istedi</p>
 
