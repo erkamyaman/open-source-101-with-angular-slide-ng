@@ -164,7 +164,7 @@ class: statement-slide
 
 <p class="statement-label">Sonra ne oldu?</p>
 
-# <span class="grad">Santosh Yadav</span> ile birlikte
+# <span class="grad">Santosh Yadav</span>
 
 <p class="statement-sub">Angular GDE ve GitHub Star.<br><img class="pangular-inline" src="/logos/pangular-animated.svg" alt="" /><strong>Pangular Inspector</strong>’ı birlikte geliştiriyoruz.</p>
 ---
