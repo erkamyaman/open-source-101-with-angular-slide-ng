@@ -190,32 +190,34 @@ disabled: true
 </div>
 
 ---
+class: compact-slide
+---
 
-# Hangi PR’lar <span class="grad">mergeleniyor?</span> <span class="title-sub">şu ana kadar <stat-value k="prs" /> PR, <stat-value k="commits" /> commit</span>
+# Ne <span class="grad">mergeleniyor?</span> <span class="title-sub"><stat-value k="prs" /> PR, <stat-value k="commits" /> commit</span>
 
 <div class="merge-grid">
   <div slide-ng-click class="merge-col yes">
     <p class="merge-title"><carbon-checkmark-filled class="merge-icon" />PR açtığım konular</p>
     <div class="pills yes">
-      <span class="docs-pill">Doküman düzeltmeleri<b class="count"><stat-value k="docs" /></b></span>
+      <span class="docs-pill">Docs fix’leri<b class="count"><stat-value k="docs" /></b></span>
       <span class="docs-pill">docs-infra bug fix’leri<b class="count"><stat-value k="docsInfraFixes" /></b></span>
-      <span class="docs-pill">Kod örnekleri ve eğitimler<b class="count"><stat-value k="examples" /></b></span>
-      <span class="docs-pill">Kırık linkler ve anchor’lar<b class="count"><stat-value k="links" /></b></span>
-      <span class="docs-pill">Angie illüstrasyonları<b class="count"><stat-value k="angie" /></b></span>
-      <span class="docs-pill">docs-infra’ya yeni özellikler<b class="count"><stat-value k="docsInfraFeatures" /></b></span>
+      <span class="docs-pill">Örnekler ve eğitimler<b class="count"><stat-value k="examples" /></b></span>
+      <span class="docs-pill">Link ve anchor fix’leri<b class="count"><stat-value k="links" /></b></span>
+      <span class="docs-pill">Angie görselleri<b class="count"><stat-value k="angie" /></b></span>
+      <span class="docs-pill">docs-infra özellikleri<b class="count"><stat-value k="docsInfraFeatures" /></b></span>
       <span class="docs-pill">DevTools<b class="count"><stat-value k="devtools" /></b></span>
-      <span class="docs-pill">Derleyici ve dil araçları<b class="count"><stat-value k="compiler" /></b></span>
+      <span class="docs-pill">Compiler ve dil araçları<b class="count"><stat-value k="compiler" /></b></span>
     </div>
   </div>
   <div slide-ng-click class="merge-col no">
     <p class="merge-title"><carbon-subtract-alt class="merge-icon" />Genelde pas geçtiklerim</p>
     <div class="pills no">
-      <span class="docs-pill">Yazım hataları ve biçimlendirme</span>
+      <span class="docs-pill">Yazım ve format</span>
       <span class="docs-pill"><code>==</code> yerine <code>===</code></span>
       <span class="docs-pill">Kullanılmayan importlar</span>
       <span class="docs-pill">Yeni doküman sayfaları</span>
-      <span class="docs-pill">Sadece erişilebilirlik düzeltmeleri</span>
-      <span class="docs-pill">Yol haritası güncellemeleri</span>
+      <span class="docs-pill">Sadece erişilebilirlik</span>
+      <span class="docs-pill">Roadmap güncellemeleri</span>
     </div>
   </div>
 </div>
@@ -233,6 +235,8 @@ disabled: true
 </div>
 
 ---
+class: compact-slide
+---
 
 # Angular’ın <span class="grad">agent skill</span>’leri
 
@@ -241,28 +245,30 @@ disabled: true
   <div slide-ng-click class="card"><p class="k">pr_review</p><p class="big sm">PR review nasıl yapılır?</p><p class="txt">Diff’in tamamını oku, commit mesajını kontrol et</p></div>
   <div slide-ng-click class="card"><p class="k">AGENTS.md</p><p class="big sm">Agent bu repoda nasıl çalışmalı?</p><p class="txt">pnpm, Bazel testleri, zoneless test stili</p></div>
   <div slide-ng-click class="card"><p class="k">angular-developer</p><p class="big sm">Uygulama geliştiriciler için</p><p class="txt">Signals, forms ve HTTP kullanımı</p></div>
-  <div slide-ng-click class="docs-alert docs-alert-tip span2"><carbon-star class="alert-icon" /><p>Katkı verenlerin izlediği kurallar agent için de geçerli.</p></div>
+  <div slide-ng-click class="docs-alert docs-alert-tip span2"><carbon-star class="alert-icon" /><p>Katkı kuralları agent için de geçerli.</p></div>
 </div>
 
 ---
 
-# Hataları <span class="grad">nerede buluyorum?</span>
+# Bug’ları <span class="grad">nerede buluyorum?</span>
 
 <div class="cards cols-2">
-  <div slide-ng-click class="card"><p class="k">Issue’lara bakarken</p><p class="big sm">Önce açık issue’lar, sonra kod</p><p class="txt">Issue’yu okuyup ilgili koda bakıyorum. Bazen angular.dev’de, bazen paketlerde ya da router’da.</p></div>
-  <div slide-ng-click class="card"><p class="k">İş yerinde</p><p class="big sm">Hata bul, PR aç</p><p class="txt">Uygulama geliştirirken framework’te bir hataya denk gelirsem düzeltme için upstream’e PR açıyorum.</p></div>
+  <div slide-ng-click class="card"><p class="k">Issue’lara bakarken</p><p class="big sm">Önce açık issue’lar, sonra kod</p><p class="txt">Issue’yu okuyup ilgili koda bakıyorum.</p></div>
+  <div slide-ng-click class="card"><p class="k">İş yerinde</p><p class="big sm">Hata bul, PR aç</p><p class="txt">Framework’te bug bulursam upstream’e PR açıyorum.</p></div>
   <div slide-ng-click class="card"><p class="k">Tarayıcıda</p><p class="big sm">angular.dev’de gezin</p><p class="txt">Sayfaları kullanırken gözüme takılan UI ve UX sorunları</p></div>
   <div slide-ng-click class="card hot"><p class="k">Çalışırken</p><p class="big sm">Dokümana bakarken</p><p class="txt">Kırık bir link, çalışmayan bir örnek veya eksik bir adım</p></div>
 </div>
 
 ---
+class: compact-slide
+---
 
 # <span class="grad">Enterprise</span> open source’a PR açmak
 
 <div class="cards cols-3">
-  <div slide-ng-click class="card"><p class="k">Önce</p><p class="big sm">CLA’yı imzala</p><p class="txt">Commit’te kullandığın e-posta adresiyle bir kez imzalaman yeterli</p></div>
+  <div slide-ng-click class="card"><p class="k">Önce</p><p class="big sm">CLA’yı imzala</p><p class="txt">Commit e-postanla bir kez imzala</p></div>
   <div slide-ng-click class="card"><p class="k">Kontroller</p><p class="big sm">CI kontrollerini geç</p><p class="txt">Commit mesajı da lint’ten geçmeli</p></div>
-  <div slide-ng-click class="card"><p class="k">Review</p><p class="big sm">Code owner onayı</p><p class="txt">Değiştirdiğin koda bakan ekipten onay al</p></div>
+  <div slide-ng-click class="card"><p class="k">Review</p><p class="big sm">Code owner onayı</p><p class="txt">İlgili ekipten onay al</p></div>
   <div slide-ng-click class="card"><p class="k">Süre</p><p class="big sm">Review günler sürebilir</p><p class="txt">Ekibe zaman tanı</p></div>
   <div slide-ng-click class="card hot"><p class="k">Yani</p><p class="big sm">Katkı rehberine uy</p><p class="txt">Hatayı ve düzeltmeyi PR’da göster</p></div>
 </div>
@@ -298,16 +304,18 @@ disabled: true
 </div>
 
 ---
+class: compact-slide
+---
 
 # <span class="grad">PR</span> hazırlamak
 
 <div class="cards cols-3">
   <div slide-ng-click class="card"><p class="k">Branch</p><p class="big sm">main’den başla</p><p class="txt">her düzeltme için bir branch</p></div>
   <div slide-ng-click class="card"><p class="k">Değişiklik</p><p class="big sm">Küçük tut</p><p class="txt">sadece düzeltmenin gerektirdiği satırlar</p></div>
-  <div slide-ng-click class="card"><p class="k">Test</p><p class="big sm">İhtiyacın olan testleri çalıştır</p><p class="txt">Değişikliğin etkilediği testleri seç</p></div>
+  <div slide-ng-click class="card"><p class="k">Test</p><p class="big sm">Testleri çalıştır</p><p class="txt">Değişikliğin etkilediği testleri seç</p></div>
   <div slide-ng-click class="card"><p class="k">Review</p><p class="big sm">Diff’ini oku</p><p class="txt">Başkasının PR’ını inceler gibi</p></div>
   <div slide-ng-click class="card"><p class="k">Commit</p><p class="big sm">Kılavuza uy</p><p class="txt">tür, kapsam, kısa başlık</p></div>
-  <div slide-ng-click class="card hot"><p class="k">Açıklama</p><p class="big sm">Neyi değiştirdin, neden?</p><p class="txt"><a target="_blank" rel="noopener noreferrer" href="https://github.com/angular/angular/pull/68625">#68625</a> örneğindeki gibi hatayı anlat ve önce ve sonra ekran görüntülerini ekle</p></div>
+  <div slide-ng-click class="card hot"><p class="k">Açıklama</p><p class="big sm">Ne ve neden?</p><p class="txt"><a target="_blank" rel="noopener noreferrer" href="https://github.com/angular/angular/pull/68625">#68625</a> gibi hatayı ve öncesi/sonrası görsellerini ekle</p></div>
 </div>
 
 ---

@@ -296,6 +296,8 @@ disabled: true
 </div>
 
 ---
+class: compact-slide
+---
 
 # Preparing the <span class="grad">PR</span>
 

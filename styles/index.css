@@ -1557,8 +1557,8 @@
 
 .contrib-wrap {
   position: relative;
-  width: 66%;
-  margin: 1.5rem auto 0;
+  width: 58%;
+  margin: 1rem auto 0;
 }
 
 .contrib-wrap .contrib-shot {
@@ -2087,4 +2087,30 @@ html.mouse-live .cards:has(.card:hover) .card.slidev-vclick-current:not(:hover) 
 .slidev-layout.wide-title h1 {
   max-width: 24ch;
   font-size: 4.6rem;
+}
+
+.slidev-layout.compact-slide h1 {
+  font-size: 2.4rem;
+  text-wrap: balance;
+}
+
+.slidev-layout.compact-slide .cards {
+  gap: 0.75rem;
+}
+
+.slidev-layout.compact-slide .card {
+  padding: 0.75rem 1rem;
+}
+
+.slidev-layout.compact-slide .card .big.sm {
+  font-size: 1.5rem;
+}
+
+.slidev-layout.compact-slide .merge-col {
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+}
+
+.slidev-layout.compact-slide .merge-col .docs-pill {
+  padding: 0.25rem 0.65rem;
 }
