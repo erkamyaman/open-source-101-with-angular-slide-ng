@@ -15,12 +15,38 @@ Enterprise open source’a nasıl katkı (contribution) vermeye başladım?<br>S
 
 ---
 layout: default
-class: statement-slide wide-title
+class: who-slide
+disabled: true
 ---
 
-# İlk PR’dan <span class="grad">200+ merge’e</span><br>ve ötesine
+<div class="who-grid">
 
-<p class="statement-sub">Angular ile open source’a katkı verirken öğrendiklerim</p>
+<div class="who-photo">
+  <img src="/erkam-photo.jpg" alt="erKam" />
+  <img class="who-badge" src="/erkamyaman.jpg" alt="Van Gogh" />
+</div>
+
+<div>
+
+# <span style="font-size: 3.2rem; white-space: nowrap;">Merhaba, ben erKam</span>
+
+<pre class="who-code"><code><span class="c-brace">&#123;&#123;</span> <span class="c-name">erKam</span> <span class="c-pipe">|</span> <span class="c-fn">kæm</span> <span class="c-brace">&#125;&#125;</span>  <span class="c-dim">Döner kebab in developer form</span> 🌯</code></pre>
+
+<ul class="rows who-rows">
+  <li><p><carbon-building class="logo" /><span class="txt"><strong>Kolay Randevu / SalonAppy</strong>’de çalışıyorum</span></p></li>
+  <li><p><img class="logo" src="/logos/slide-ng.svg" alt="" /><span class="txt"><strong>slide.ng</strong>’yi geliştiriyorum</span></p></li>
+  <li><p><img class="logo" src="/logos/angular.gif" alt="" /><span class="txt"><strong>Angular</strong>’a katkı veriyorum</span></p></li>
+  <li><p><img class="logo" src="/logos/pangular-animated.svg" alt="" /><span class="txt"><strong>Pangular Inspector</strong>’ı geliştiriyorum</span></p></li>
+  <li><p><img class="logo" src="/logos/ng-native.svg" alt="" /><span class="txt"><strong>Angular Native</strong>’e katkı veriyorum</span></p></li>
+</ul>
+
+</div>
+
+</div>
+
+<!--
+Kısa tut, sonra geç.
+-->
 
 ---
 

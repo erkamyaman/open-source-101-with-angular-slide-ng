@@ -35,8 +35,9 @@ export default class DeckGlobalTop {
   section = computed(() => {
     let found = -1;
     const isTr = this.lang() === 'tr';
+    const sectionSlide = this.no() + (isTr ? 1 : 0);
     SECTIONS.forEach((s, i) => {
-      if (this.no() >= s.from) found = i;
+      if (sectionSlide >= s.from) found = i;
     });
     if (found < 0) return null;
     const isBonus = SECTIONS[found].name === 'Bonus';
