@@ -29,7 +29,7 @@ class: who-slide
 
 # Merhaba, ben erKam
 
-<pre class="who-code"><code><span class="c-brace">&#123;&#123;</span> <span class="c-name">erKam</span> <span class="c-pipe">|</span> <span class="c-fn">kæm</span> <span class="c-brace">&#125;&#125;</span>  <span class="c-dim">Yazılımcı formunda döner kebap</span> 🌯</code></pre>
+<pre class="who-code"><code><span class="c-brace">&#123;&#123;</span> <span class="c-name">erKam</span> <span class="c-pipe">|</span> <span class="c-fn">kæm</span> <span class="c-brace">&#125;&#125;</span>  <span class="c-dim">Döner kebab in developer form</span> 🌯</code></pre>
 
 <ul class="rows who-rows">
   <li><p><carbon-building class="logo" /><span class="txt"><strong>Kolay Randevu / SalonAppy</strong>’de çalışıyorum</span></p></li>
