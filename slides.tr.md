@@ -344,7 +344,7 @@ class: compact-slide
 
 ---
 
-# Hatayı bulmaktan <span class="grad">merge’e</span>
+# Bug’dan <span class="grad">merge’e</span>
 
 ```mermaid {layout:'dagre', scale:1.5, theme:'base', themeVariables:{primaryColor:'#141414', primaryTextColor:'#ffffff', primaryBorderColor:'#f11653', lineColor:'#c9a0ff', secondaryColor:'#141414', tertiaryColor:'#141414', edgeLabelBackground:'#000000', fontFamily:'Inter'}}
 flowchart LR
