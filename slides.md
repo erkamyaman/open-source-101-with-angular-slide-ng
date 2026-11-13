@@ -25,17 +25,21 @@ class: who-slide
 
 <div>
 
-# Hi, I’m erKam
+# erKam
 
 <pre class="who-code"><code><span class="c-brace">&#123;&#123;</span> <span class="c-name">erKam</span> <span class="c-pipe">|</span> <span class="c-fn">kæm</span> <span class="c-brace">&#125;&#125;</span>  <span class="c-dim">Döner kebab in developer form</span> 🌯</code></pre>
 
-<ul class="rows who-rows">
-  <li><p><carbon-building class="logo" /><span class="txt">Working at <strong>Kolay Randevu / SalonAppy</strong></span></p></li>
-  <li><p><img class="logo" src="/logos/slide-ng.svg" alt="" /><span class="txt">Building <strong>slide.ng</strong>, slides for Angular</span></p></li>
-  <li><p><img class="logo" src="/logos/angular.gif" alt="" /><span class="txt">Contributing to <strong>Angular</strong>, docs and docs-infra</span></p></li>
-  <li><p><img class="logo" src="/logos/pangular-animated.svg" alt="" /><span class="txt">Building <strong>Pangular Inspector</strong>, with Santosh Yadav</span></p></li>
-  <li><p><img class="logo" src="/logos/ng-native.svg" alt="" /><span class="txt">Contributing to <strong>Angular Native</strong></span></p></li>
-</ul>
+<div class="who-roles">
+  <p class="who-tag">Software engineer at <strong>Kolay Randevu / SalonAppy</strong>, from Turkey 🇹🇷</p>
+  <dl>
+    <div><dt>Currently building</dt><dd><span class="chip"><img src="/logos/ngx-cloudflare.svg" alt="" />ngx-cloudflare</span></dd></div>
+    <div><dt>Creator of</dt><dd><span class="chip"><img src="/logos/slide-ng.svg" alt="" />slide.ng</span><span class="chip"><img src="/icons/tr.svg" alt="" />Turkish Angular docs</span><span class="chip"><img src="/logos/capacitor-foldable.svg" alt="" />Capacitor Foldable</span><span class="chip"><img src="/logos/angularians.svg" alt="" />Angularians</span></dd></div>
+    <div><dt>Co-creator of</dt><dd><span class="chip"><img src="/logos/pangular-animated.svg" alt="" />Pangular Inspector</span></dd></div>
+    <div><dt>Team member of</dt><dd><span class="chip"><img src="/logos/x18n.svg" alt="" />x18n</span></dd></div>
+    <div><dt>Contributing to</dt><dd><span class="chip"><img src="/logos/angular.gif" alt="" />Angular</span><span class="chip"><img src="/logos/ng-native.svg" alt="" />Angular Native</span></dd></div>
+    <div><dt>Accepted to</dt><dd><span class="chip"><img src="/logos/claude-icon.svg" alt="" /><span><strong class="claude-name">Claude</strong> for Open Source</span></span></dd></div>
+  </dl>
+</div>
 
 </div>
 

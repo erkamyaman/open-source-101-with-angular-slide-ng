@@ -4,7 +4,7 @@ info: |
   Enterprise open source’a nasıl katkı (contribution) vermeye başladım? Siz nereden başlayabilirsiniz?
 ---
 
-# <img src="/angular_wordmark_gradient.png" width="2560" height="800" style="display: inline-block; height: 1.5em; width: auto; vertical-align: 0; margin: -0.4em 0 -0.4em -0.2em;" alt="Angular" /> ile<br>Açık Kaynak 101
+# <img src="/angular_wordmark_gradient.png" width="2560" height="800" style="display: inline-block; height: 1.5em; width: auto; vertical-align: 0; margin: -0.4em -0.15em -0.4em -0.2em;" alt="Angular" /> ile<br>Açık Kaynak 101
 
 Enterprise open source’a nasıl katkı (contribution) vermeye başladım?<br>Siz nereden başlayabilirsiniz?
 
@@ -27,18 +27,19 @@ class: who-slide
 
 <div>
 
-# <span style="font-size: 3.2rem; white-space: nowrap;">Merhaba, ben erKam</span>
+# erKam
 
 <pre class="who-code"><code><span class="c-brace">&#123;&#123;</span> <span class="c-name">erKam</span> <span class="c-pipe">|</span> <span class="c-fn">kæm</span> <span class="c-brace">&#125;&#125;</span>  <span class="c-dim">Döner kebab in developer form</span> 🌯</code></pre>
 
-<ul class="rows who-rows">
-  <li><p><carbon-building class="logo" /><span class="txt"><strong>Kolay Randevu / SalonAppy</strong>’de çalışıyorum</span></p></li>
-  <li><p><img class="logo" src="/logos/slide-ng.svg" alt="" /><span class="txt"><strong>slide.ng</strong>’yi geliştiriyorum</span></p></li>
-  <li><p><img class="logo" src="/logos/angular.gif" alt="" /><span class="txt"><strong>Angular</strong>’a katkı veriyorum</span></p></li>
-  <li><p><img class="logo" src="/logos/pangular-animated.svg" alt="" /><span class="txt"><strong>Pangular Inspector</strong>’ı geliştiriyorum</span></p></li>
-  <li><p><img class="logo" src="/logos/ng-native.svg" alt="" /><span class="txt"><strong>Angular Native</strong>’e katkı veriyorum</span></p></li>
-  <li><p><img class="logo" src="/logos/claude-icon.svg" alt="" /><span class="txt"><strong class="claude-name">Claude</strong> <strong>for Open Source</strong> programına kabul edildim</span></p></li>
-</ul>
+<div class="who-roles">
+  <p class="who-tag"><strong>Kolay Randevu / SalonAppy</strong>’de yazılım mühendisiyim</p>
+  <dl>
+    <div><dt>Şu an geliştiriyorum</dt><dd><span class="chip"><img src="/logos/ngx-cloudflare.svg" alt="" />ngx-cloudflare</span></dd></div>
+    <div><dt>Yaptığım projeler</dt><dd><span class="chip"><img src="/logos/slide-ng.svg" alt="" />slide.ng</span><span class="chip"><img src="/icons/tr.svg" alt="" />Angular Türkçe dokümantasyonu</span><span class="chip"><img src="/logos/capacitor-foldable.svg" alt="" />Capacitor Foldable</span><span class="chip"><img src="/logos/angularians.svg" alt="" />Angularians</span><span class="chip"><img src="/logos/pangular-animated.svg" alt="" />Pangular Inspector</span></dd></div>
+    <div><dt>Katkı veriyorum</dt><dd><span class="chip"><img src="/logos/angular.gif" alt="" />Angular</span><span class="chip"><img src="/logos/ng-native.svg" alt="" />Angular Native</span></dd></div>
+    <div><dt>Kabul edildim</dt><dd><span class="chip"><img src="/logos/claude-icon.svg" alt="" /><span><strong class="claude-name">Claude</strong> for Open Source</span></span></dd></div>
+  </dl>
+</div>
 
 </div>
 
@@ -124,12 +125,12 @@ class: statement-slide
 
 ---
 layout: default
-class: statement-slide
+class: statement-slide wide-title
 ---
 
 <p class="statement-label">Sonra ne oldu?</p>
 
-# En iyi işlerim<br><span class="grad" style="white-space: nowrap;">docs-infra</span>’da
+# <span style="white-space: nowrap;">En keyif aldığım işlerim</span><br><span class="grad" style="white-space: nowrap;">docs-infra</span>’da
 
 <p class="statement-sub">Dokümanlarda ve framework’te küçük düzeltmeler</p>
 ---
@@ -189,6 +190,17 @@ class: statement-slide
 # Bir de <span class="grad">Angular Native</span> var
 
 <p class="statement-sub"><img class="pangular-inline" src="/logos/ng-native.svg" alt="" />Ashley Hunter’ın projesi</p>
+
+---
+layout: default
+class: statement-slide
+---
+
+<p class="statement-label">Sonra ne oldu?</p>
+
+# <span class="grad">Anthony Fu</span>’dan<br />davet geldi
+
+<p class="statement-sub"><img class="pangular-inline" src="/logos/x18n.svg" alt="" /><strong>x18n</strong> ekibine katıldım</p>
 
 ---
 disabled: true

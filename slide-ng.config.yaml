@@ -14,8 +14,9 @@ info: |
 drawings:
   persist: false
 transition: fade
-duration: 35min
+duration: 30min
 timer: countdown
+timerStart: 3
 progressBar:
   position: bottom
   height: 3

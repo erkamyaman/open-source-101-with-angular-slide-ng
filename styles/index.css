@@ -601,7 +601,7 @@
   align-items: center;
   justify-content: space-between;
   font-family: 'DM Mono', monospace;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: var(--muted);
 }
 
@@ -1079,8 +1079,12 @@
 
 .card.with-flag .flag {
   flex: none;
-  width: 8.5rem;
-  height: 8.5rem;
+  width: 6.5rem;
+  height: 6.5rem;
+}
+
+.card.with-flag .big {
+  white-space: nowrap;
 }
 
 .flag-inline {
@@ -1100,11 +1104,20 @@
 }
 
 .docs-alert {
-  padding-block: 0.9rem;
+  --alert-pad: 0.9rem;
+  padding-block: var(--alert-pad);
+}
+
+.docs-alert {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding-inline-start: 1.2rem;
 }
 
 .docs-alert .alert-icon {
-  top: 0.95rem;
+  position: static;
+  flex: none;
 }
 
 .who-rows .big-row .logo {
@@ -2132,7 +2145,7 @@ html.mouse-live .cards:has(.card:hover) .card.slidev-vclick-current:not(:hover) 
 }
 
 .slidev-layout.compact-slide .docs-alert {
-  padding-block: 0.65rem;
+  --alert-pad: 0.65rem;
 }
 
 .slidev-layout.claude-program-slide h1 {
@@ -2169,4 +2182,62 @@ html.mouse-live .cards:has(.card:hover) .card.slidev-vclick-current:not(:hover) 
 
 .burnout-mark:not(.slidev-vclick-hidden) .burnout-face {
   animation-delay: 0.65s;
+}
+
+.who-roles .who-tag {
+  margin: 0 0 0.8rem;
+  font-size: 1rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.who-roles .who-tag strong {
+  color: var(--fg);
+}
+
+.who-roles dl {
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+
+.who-roles dl > div {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.who-roles dt {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.who-roles dd {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0;
+}
+
+.who-roles .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.15rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #0d0d0d;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.who-grid .who-roles .chip img {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 0;
+  object-fit: contain;
 }
