@@ -99,8 +99,10 @@ TODO: add your real story here: what you felt before clicking “Create pull req
     <span class="first-label">ilk katkım</span>
   </div>
   <div slide-ng-click="6" class="first-mark burnout-mark">
-    <svg class="first-circle" viewBox="0 0 60 60"><path pathLength="100" d="M31 5 C 47 4, 58 18, 55 32 C 52 47, 38 57, 24 54 C 9 50, 3 36, 7 22 C 11 10, 24 4, 38 8" fill="none" stroke="#f11653" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" /><path class="burnout-face" d="M22 25h.1 M38 25h.1 M21 40 Q30 30 39 40" fill="none" stroke="#f11653" stroke-width="3" stroke-linecap="round" /></svg>
     <svg class="first-arrow" viewBox="0 0 60 100" preserveAspectRatio="none"><path d="M3 4 C 38 2, 52 30, 50 84" fill="none" stroke="#f11653" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" /><path d="M41 72 L50 90 L58 71" fill="none" stroke="#f11653" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" /></svg>
+  </div>
+  <div slide-ng-click="7" class="first-mark burnout-mark">
+    <svg class="first-circle" viewBox="0 0 60 60"><path pathLength="100" d="M31 5 C 47 4, 58 18, 55 32 C 52 47, 38 57, 24 54 C 9 50, 3 36, 7 22 C 11 10, 24 4, 38 8" fill="none" stroke="#f11653" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" /><path class="burnout-face" d="M22 25h.1 M38 25h.1 M21 40 Q30 30 39 40" fill="none" stroke="#f11653" stroke-width="3" stroke-linecap="round" /></svg>
     <span class="first-label">burnout</span>
   </div>
 </div>
