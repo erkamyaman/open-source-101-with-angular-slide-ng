@@ -362,7 +362,7 @@ flowchart LR
 
 <ol class="steps">
   <li slide-ng-click><span class="dot"></span><p><strong>Zaten kullandığın</strong> bir proje seç</p></li>
-  <li slide-ng-click><span class="dot"></span><p>Katkı rehberini oku</p></li>
+  <li slide-ng-click><span class="dot"></span><p>Contribution guide’ı oku</p></li>
   <li slide-ng-click><span class="dot"></span><p>Dokümanda <strong slide-ng-mark.red.underline="3">doğrulayabileceğin</strong> bir hata bul</p></li>
   <li slide-ng-click><span class="dot"></span><p>Küçük bir PR aç</p></li>
   <li slide-ng-click><span class="dot"></span><p>Sabırlı ol. <strong>Review günler sürebilir</strong></p></li>
