@@ -58,7 +58,7 @@ Kısa tut, sonra geç.
   <div slide-ng-click class="b b2" [class.hot]="cs.n() === 2"><span class="n">2</span><p><span class="gt">Hangi PR’lar</span> merge oluyor?</p></div>
   <div slide-ng-click class="b b3" [class.hot]="cs.n() === 3"><span class="n">3</span><p>Düzeltecek <span class="gt">bug’ları nasıl buluyorum?</span></p></div>
   <div slide-ng-click class="b b4" [class.hot]="cs.n() === 4"><span class="n">4</span><p><span class="gt">Büyük projelere</span> PR açmak</p></div>
-  <div slide-ng-click class="b b5" [class.hot]="cs.n() >= 5"><span class="n">5</span><p>İlk <span class="gt">katkı</span></p></div>
+  <div slide-ng-click class="b b5" [class.hot]="cs.n() >= 5"><span class="n">5</span><p>Sizin ilk <span class="gt">contribution’ınız</span></p></div>
 </div>
 
 ---
