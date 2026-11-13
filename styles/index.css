@@ -1073,8 +1073,9 @@
 .card.with-flag {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: flex-start;
+  gap: 1.6rem;
+  width: fit-content;
 }
 
 .card.with-flag .flag {
@@ -2386,4 +2387,107 @@ html.mouse-live .cards:has(.card:hover) .card.slidev-vclick-current:not(:hover) 
   font-size: 1.45rem;
   line-height: 1.4;
   color: var(--muted);
+}
+
+.angie-copy {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.slidev-layout .angie-copy p {
+  margin: 0;
+}
+
+.slidev-layout .angie-stat {
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--fg);
+}
+
+.slidev-layout .angie-where {
+  font-size: 1.3rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.slidev-layout .angie-wink {
+  font-size: 1.3rem;
+  line-height: 1.45;
+  color: var(--fg);
+}
+
+.angie-grid:has(.angie-copy) img {
+  max-height: 400px;
+}
+
+.thanks-qrs {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.thanks-qrs .thanks-qr .qr-svg,
+.thanks-qrs .thanks-qr .qr-img {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem;
+}
+
+.thanks-qrs .thanks-qr .qr-img {
+  padding: 0;
+  border: 0;
+  background: #fff;
+}
+
+.thanks-qrs .thanks-qr figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.slidev-layout .thanks-qrs .credit-mark {
+  width: 1.2rem;
+  height: 1.2rem;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.thanks-qrs > .thanks-qr {
+  flex: none;
+  width: 10rem;
+}
+
+.slidev-layout .thanks-qrs .thanks-qr img.qr-img {
+  box-sizing: border-box;
+  width: 10rem;
+  height: 10rem;
+  padding: 0.6rem;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(135deg, #ff9a5c, #e5541a 50%, #cc4209) border-box;
+}
+
+.slidev-layout .thanks-qrs .thanks-qr figcaption img.credit-mark {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+}
+
+.thanks-qrs .thanks-qr figcaption {
+  white-space: nowrap;
+}
+
+.thanks-grid:has(.thanks-qrs) {
+  gap: 2.5rem;
 }
