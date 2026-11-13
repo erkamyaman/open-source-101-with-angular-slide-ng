@@ -13,35 +13,41 @@ How I started contributing to enterprise open source,<br>and how you can do it t
 
 ---
 layout: default
-class: who-slide
+class: me-slide
 ---
 
-<div class="who-grid">
+<div class="me-grid">
 
-<div class="who-photo">
-  <img src="/erkam-photo.jpg" alt="erKam" />
-  <img class="who-badge" src="/erkamyaman.jpg" alt="Van Gogh" />
-</div>
-
-<div>
+<div class="me-text">
 
 # erKam
 
 <pre class="who-code"><code><span class="c-brace">&#123;&#123;</span> <span class="c-name">erKam</span> <span class="c-pipe">|</span> <span class="c-fn">kæm</span> <span class="c-brace">&#125;&#125;</span>  <span class="c-dim">Döner kebab in developer form</span> 🌯</code></pre>
 
-<div class="who-roles">
-  <p class="who-tag">Software engineer at <strong>Kolay Randevu / SalonAppy</strong>, from Turkey 🇹🇷</p>
-  <dl>
-    <div><dt>Currently building</dt><dd><span class="chip"><img src="/logos/ngx-cloudflare.svg" alt="" />ngx-cloudflare</span></dd></div>
-    <div><dt>Creator of</dt><dd><span class="chip"><img src="/logos/slide-ng.svg" alt="" />slide.ng</span><span class="chip"><img src="/icons/tr.svg" alt="" />Turkish Angular docs</span><span class="chip"><img src="/logos/capacitor-foldable.svg" alt="" />Capacitor Foldable</span><span class="chip"><img src="/logos/angularians.svg" alt="" />Angularians</span></dd></div>
-    <div><dt>Co-creator of</dt><dd><span class="chip"><img src="/logos/pangular-animated.svg" alt="" />Pangular Inspector</span></dd></div>
-    <div><dt>Team member of</dt><dd><span class="chip"><img src="/logos/x18n.svg" alt="" />x18n</span></dd></div>
-    <div><dt>Contributing to</dt><dd><span class="chip"><img src="/logos/angular.gif" alt="" />Angular</span><span class="chip"><img src="/logos/ng-native.svg" alt="" />Angular Native</span></dd></div>
-    <div><dt>Accepted to</dt><dd><span class="chip"><img src="/logos/claude-icon.svg" alt="" /><span><strong class="claude-name">Claude</strong> for Open Source</span></span></dd></div>
-  </dl>
+<div class="me-lines">
+  <p class="me-line">Software engineer at <strong class="me-name">Kolay Randevu / SalonAppy</strong>.</p>
+  <p class="me-line">Contributing to <span class="me-name"><img class="me-ico" src="/logos/angular.gif" alt="" /><strong>Angular</strong></span> and <span class="me-name"><img class="me-ico" src="/logos/ng-native.svg" alt="" /><strong>Angular Native</strong></span>.</p>
+  <p class="me-line">Team member of <span class="me-name"><img class="me-ico" src="/logos/x18n.svg" alt="" /><strong>x18n</strong></span>.</p>
+  <p class="me-line">Accepted to <span class="me-name"><img class="me-ico" src="/logos/claude-icon.svg" alt="" /><strong class="claude-name">Claude</strong> <strong>for Open Source</strong></span>.</p>
 </div>
 
 </div>
+
+<figure class="me-ring">
+  <div class="me-photo">
+    <img src="/erkam-photo.jpg" alt="erKam" />
+    <img class="me-badge" src="/erkamyaman.jpg" alt="" />
+  </div>
+  <ul>
+    <li style="--i: 0"><img src="/logos/ngx-cloudflare.svg" alt="" /><span>ngx-cloudflare<span class="me-now">now</span></span></li>
+    <li style="--i: 1"><img src="/logos/slide-ng.svg" alt="" /><span>slide.ng</span></li>
+    <li style="--i: 2"><img src="/logos/pangular-animated.svg" alt="" /><span>Pangular Inspector</span></li>
+    <li style="--i: 3"><img src="/logos/angularians.svg" alt="" /><span>Angularians</span></li>
+    <li style="--i: 4"><img src="/logos/capacitor-foldable.svg" alt="" /><span>Capacitor Foldable</span></li>
+    <li style="--i: 5"><img src="/icons/tr.svg" alt="" /><span>angular-docs.tr</span></li>
+  </ul>
+  <figcaption>Projects I made</figcaption>
+</figure>
 
 </div>
 

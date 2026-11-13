@@ -2184,60 +2184,191 @@ html.mouse-live .cards:has(.card:hover) .card.slidev-vclick-current:not(:hover) 
   animation-delay: 0.65s;
 }
 
-.who-roles .who-tag {
-  margin: 0 0 0.8rem;
-  font-size: 1rem;
-  color: var(--muted);
-  white-space: nowrap;
+
+.slidev-layout.me-slide {
+  display: flex;
+  align-items: center;
 }
 
-.who-roles .who-tag strong {
+.me-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 3.5rem;
+  width: 100%;
+}
+
+.slidev-layout .me-text h1 {
+  font-size: 4.6rem;
+  line-height: 1;
+  margin: 0 0 1.2rem;
+}
+
+.slidev-layout .me-text .who-code {
+  margin: 0 0 1.6rem;
+  font-size: 0.82rem;
+}
+
+.me-lines {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.slidev-layout .me-line {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  color: var(--muted);
+  text-wrap: pretty;
+}
+
+.me-line strong {
+  color: var(--fg);
+  font-weight: 600;
+}
+
+.slidev-layout .me-line .me-ico {
+  display: inline-block;
+  width: 1.3em;
+  height: 1.3em;
+  margin: 0 0.3em 0 0;
+  vertical-align: -0.28em;
+  object-fit: contain;
+}
+
+.me-ring {
+  --r: 132px;
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin: 0;
+}
+
+.me-photo {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: 136px;
+  height: 136px;
+  padding: 4px;
+  border-radius: 50%;
+  translate: -50% -50%;
+  background: linear-gradient(135deg, #f11653, #f637e3 55%, #8514f5);
+}
+
+.slidev-layout .me-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.slidev-layout .me-photo .me-badge {
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  width: 46px;
+  height: 46px;
+  border: 4px solid var(--bg);
+}
+
+.me-ring::before {
+  content: '';
+  position: absolute;
+  inset: calc(50% - var(--r));
+  border: 1px dashed #3a3a3a;
+  border-radius: 50%;
+}
+
+.slidev-layout .me-ring ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slidev-layout .me-ring li {
+  --a: calc(var(--i) * 60deg - 60deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  width: 7.5rem;
+  margin: 0;
+  padding: 0;
+  translate: calc(-50% + cos(var(--a)) * var(--r)) calc(-1.4rem + sin(var(--a)) * var(--r));
+  animation: me-in 500ms ease both;
+  animation-delay: calc(150ms + var(--i) * 60ms);
+}
+
+.slidev-layout .me-ring li::before {
+  display: none;
+}
+
+.slidev-layout .me-ring li img {
+  width: 2.8rem;
+  height: 2.8rem;
+  padding: 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  background: var(--bg);
+  object-fit: contain;
+  box-sizing: border-box;
+}
+
+.me-ring li > span {
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
   color: var(--fg);
 }
 
-.who-roles dl {
-  margin: 0;
-  border-top: 1px solid var(--line);
-}
-
-.who-roles dl > div {
-  display: grid;
-  grid-template-columns: 10rem 1fr;
-  align-items: center;
-  gap: 0.8rem;
-  padding: 0.35rem 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.who-roles dt {
+.me-now {
+  display: block;
+  margin-top: 0.15rem;
   font-family: 'DM Mono', monospace;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #4ade80;
+}
+
+.me-now::before {
+  content: '';
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: 0.05rem;
+}
+
+.me-ring figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1.5rem;
+  font-size: 0.8rem;
+  text-align: center;
   color: var(--muted);
 }
 
-.who-roles dd {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-  margin: 0;
+@keyframes me-in {
+  from {
+    opacity: 0;
+    scale: 0.6;
+  }
 }
 
-.who-roles .chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  padding: 0.15rem 0.6rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: #0d0d0d;
-  font-size: 0.9rem;
-  font-weight: 600;
+@media (prefers-reduced-motion: reduce) {
+  .slidev-layout .me-ring li {
+    animation: none;
+  }
+}
+
+.me-name {
   white-space: nowrap;
-}
-
-.who-grid .who-roles .chip img {
-  width: 1.2rem;
-  height: 1.2rem;
-  border-radius: 0;
-  object-fit: contain;
 }
