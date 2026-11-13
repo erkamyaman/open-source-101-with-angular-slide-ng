@@ -4,7 +4,7 @@ info: |
   Enterprise open source’a nasıl katkı (contribution) vermeye başladım? Siz nereden başlayabilirsiniz?
 ---
 
-# Açık Kaynak 101<br><img src="/angular_wordmark_gradient.png" width="2560" height="800" style="display: inline-block; height: 1.5em; width: auto; vertical-align: 0; margin: -0.4em 0 -0.4em -0.2em;" alt="Angular" /> ile
+# Angular ile Açık Kaynak 101
 
 Enterprise open source’a nasıl katkı (contribution) vermeye başladım?<br>Siz nereden başlayabilirsiniz?
 
