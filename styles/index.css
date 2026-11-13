@@ -2144,13 +2144,13 @@ html.mouse-live .cards:has(.card:hover) .card.slidev-vclick-current:not(:hover) 
 
 .burnout-mark .first-label {
   left: 55%;
-  top: 28%;
+  top: 15%;
 }
 
 .burnout-mark .first-arrow {
   left: 59%;
-  top: 40%;
-  height: 15%;
+  top: 27%;
+  height: 29.45%;
 }
 
 .burnout-mark .first-circle {
