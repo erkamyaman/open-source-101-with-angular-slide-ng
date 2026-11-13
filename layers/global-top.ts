@@ -5,14 +5,14 @@ import { SlideTimer } from 'slide-ng/builtin/slide-timer';
 
 const SECTIONS = [
   { from: 4, name: 'How I started' },
-  { from: 13, name: 'What to send or skip' },
-  { from: 14, name: 'Where to find things to fix' },
-  { from: 17, name: 'PRs to big projects' },
-  { from: 25, name: 'First contribution' },
-  { from: 26, name: 'Bonus' },
+  { from: 14, name: 'What to send or skip' },
+  { from: 15, name: 'Where to find things to fix' },
+  { from: 18, name: 'PRs to big projects' },
+  { from: 26, name: 'First contribution' },
+  { from: 27, name: 'Bonus' },
 ];
 
-const TR_NAMES = ['Nasıl başladım', 'Ne göndermeli, ne geçmeli', 'Düzeltilecek şeyleri nerede bulmalı', 'Büyük projelere PR', 'İlk katkı', 'Bonus'];
+const TR_NAMES = ['Nasıl başladım', 'Neler mergeleniyor?', 'Bug’ları nerede buluyorum?', 'Büyük projelere PR', 'İlk katkı', 'Bonus'];
 
 // Port of global-top.vue: the footer (author, section, slide count, progress bar) on every slide
 // except the first two and the last three, plus the `mouse-live` class on <html>: hover effects
@@ -36,12 +36,12 @@ export default class DeckGlobalTop {
 
   section = computed(() => {
     let found = -1;
+    const isTr = this.lang() === 'tr';
     SECTIONS.forEach((s, i) => {
       if (this.no() >= s.from) found = i;
     });
     if (found < 0) return null;
     const isBonus = SECTIONS[found].name === 'Bonus';
-    const isTr = this.lang() === 'tr';
     const name = isTr ? TR_NAMES[found] : SECTIONS[found].name;
     return { number: isBonus ? 'Bonus' : String(found + 1), name: isBonus ? (isTr ? 'Skill’ler' : 'Skills') : name };
   });

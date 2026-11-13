@@ -345,7 +345,7 @@
   font-size: 0.85em;
 }
 
-.slidev-layout.who-slide {
+.slidev-layout.who-slide:has(.who-grid) {
   display: flex;
   align-items: center;
 }
@@ -1313,11 +1313,19 @@
   border-radius: 0.7rem;
 }
 
+.slidev-layout.statement-slide:has(.angie-pop-wrap) {
+  padding-right: 17rem;
+}
+
+.slidev-layout.statement-slide:has(.angie-pop-wrap) h1 {
+  font-size: 3.5rem;
+}
+
 .angie-pop-wrap {
   position: absolute;
-  top: 2.2rem;
+  top: 5rem;
   right: 2.4rem;
-  width: 210px;
+  width: 185px;
   pointer-events: none;
 }
 
@@ -1565,8 +1573,8 @@
 
 .contrib-wrap {
   position: relative;
-  width: 66%;
-  margin: 2.4rem auto 0;
+  width: 54%;
+  margin: 0.75rem auto 0;
 }
 
 .contrib-wrap .contrib-shot {
@@ -1584,8 +1592,8 @@
 
 .first-label {
   position: absolute;
-  left: 9.5%;
-  top: 24%;
+  left: 11%;
+  top: 40%;
   transform: rotate(-4deg);
   font-family: 'Caveat', 'Bradley Hand', 'Segoe Print', cursive;
   font-size: 1.3rem;
@@ -1597,8 +1605,8 @@
 
 .first-circle {
   position: absolute;
-  left: 23.4%;
-  top: 55.8%;
+  left: 24.4%;
+  top: 67.1%;
   width: 4.8%;
   aspect-ratio: 1;
   transform: translate(-50%, -50%) rotate(-8deg);
@@ -1620,10 +1628,10 @@
 
 .first-arrow {
   position: absolute;
-  left: 21.4%;
-  top: 35%;
+  left: 22.4%;
+  top: 51.9%;
   width: 3.2%;
-  height: 13%;
+  height: 9.6%;
   overflow: visible;
 }
 
@@ -2095,4 +2103,70 @@ html.mouse-live .cards:has(.card:hover) .card.slidev-vclick-current:not(:hover) 
 .slidev-layout.wide-title h1 {
   max-width: 24ch;
   font-size: 4.6rem;
+}
+
+.slidev-layout.compact-slide h1 {
+  font-size: 2.4rem;
+  text-wrap: balance;
+}
+
+.slidev-layout.compact-slide .cards {
+  gap: 0.75rem;
+}
+
+.slidev-layout.compact-slide .card {
+  padding: 0.75rem 1rem;
+}
+
+.slidev-layout.compact-slide .card .big.sm {
+  font-size: 1.5rem;
+}
+
+.slidev-layout.compact-slide .merge-col {
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+}
+
+.slidev-layout.compact-slide .merge-col .docs-pill {
+  padding: 0.25rem 0.65rem;
+}
+
+.slidev-layout.compact-slide .docs-alert {
+  padding-block: 0.65rem;
+}
+
+.slidev-layout.claude-program-slide h1 {
+  font-size: 3.5rem;
+}
+
+.claude-program-slide .claude-title-logo {
+  display: inline-block;
+  width: auto;
+  height: 0.85em;
+  vertical-align: -0.04em;
+}
+
+.slidev-layout strong.claude-name {
+  color: #d97757;
+}
+
+.burnout-mark .first-label {
+  left: 55%;
+  top: 15%;
+}
+
+.burnout-mark .first-arrow {
+  left: 59%;
+  top: 27%;
+  height: 29.45%;
+}
+
+.burnout-mark .first-circle {
+  left: 61%;
+  top: 61%;
+  width: 8%;
+}
+
+.burnout-mark:not(.slidev-vclick-hidden) .burnout-face {
+  animation-delay: 0.65s;
 }

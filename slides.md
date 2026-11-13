@@ -91,6 +91,13 @@ TODO: add your real story here: what you felt before clicking “Create pull req
     <svg class="first-arrow" viewBox="0 0 60 100" preserveAspectRatio="none"><path d="M3 4 C 38 2, 52 30, 50 84" fill="none" stroke="#f11653" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" /><path d="M41 72 L50 90 L58 71" fill="none" stroke="#f11653" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" /></svg>
     <span class="first-label">my first one</span>
   </div>
+  <div slide-ng-click="6" class="first-mark burnout-mark">
+    <svg class="first-arrow" viewBox="0 0 60 100" preserveAspectRatio="none"><path d="M3 4 C 38 2, 52 30, 50 84" fill="none" stroke="#f11653" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" /><path d="M41 72 L50 90 L58 71" fill="none" stroke="#f11653" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" /></svg>
+  </div>
+  <div slide-ng-click="7" class="first-mark burnout-mark">
+    <svg class="first-circle" viewBox="0 0 60 60"><path pathLength="100" d="M31 5 C 47 4, 58 18, 55 32 C 52 47, 38 57, 24 54 C 9 50, 3 36, 7 22 C 11 10, 24 4, 38 8" fill="none" stroke="#f11653" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" /><path class="burnout-face" d="M22 25h.1 M38 25h.1 M21 40 Q30 30 39 40" fill="none" stroke="#f11653" stroke-width="3" stroke-linecap="round" /></svg>
+    <span class="first-label">burnout</span>
+  </div>
 </div>
 
 <!--
@@ -188,6 +195,15 @@ disabled: true
 </div>
 
 ---
+layout: default
+class: statement-slide wide-title claude-program-slide
+---
+
+# I joined the<br><img class="claude-title-logo" src="/logos/claude-icon.svg" width="125" height="125" alt="" /> <strong class="claude-name">Claude</strong> for Open Source Program
+
+<p class="statement-sub">Six months of Claude Max 20x for my work on the Angular docs and angular-docs.tr.</p>
+
+---
 
 # What gets <span class="grad">merged</span> <span class="title-sub"><stat-value k="prs" /> PRs, <stat-value k="commits" /> commits so far</span>
 
@@ -219,6 +235,8 @@ disabled: true
 </div>
 
 ---
+class: compact-slide
+---
 
 # My <span class="grad">workflow</span>
 
@@ -230,6 +248,8 @@ disabled: true
   <div slide-ng-click class="docs-alert docs-alert-note span3"><carbon-bookmark class="alert-icon" /><p>Most findings are false positives. The survivors get ranked, and I read every PR locally before I send it.</p></div>
 </div>
 
+---
+class: compact-slide
 ---
 
 # Angular ships <span class="grad">skills</span> for your agent
@@ -253,6 +273,8 @@ disabled: true
   <div slide-ng-click class="card hot"><p class="k">While working</p><p class="big sm">The docs let me down</p><p class="txt">a broken link, a wrong example or a missing piece</p></div>
 </div>
 
+---
+class: compact-slide
 ---
 
 # Sending a PR to <span class="grad">enterprise</span> open source
@@ -295,6 +317,8 @@ disabled: true
   <div slide-ng-click class="docs-alert docs-alert-tip span3"><carbon-star class="alert-icon" /><p>A PR with proof gets reviewed. A PR with an opinion gets questions. Reviewers have little time, and evidence saves it.</p></div>
 </div>
 
+---
+class: compact-slide
 ---
 
 # Preparing the <span class="grad">PR</span>
