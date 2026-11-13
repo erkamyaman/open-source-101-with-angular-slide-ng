@@ -1558,7 +1558,7 @@
 .contrib-wrap {
   position: relative;
   width: 66%;
-  margin: 2.4rem auto 0;
+  margin: 1.5rem auto 0;
 }
 
 .contrib-wrap .contrib-shot {
@@ -1576,8 +1576,8 @@
 
 .first-label {
   position: absolute;
-  left: 9.5%;
-  top: 24%;
+  left: 11%;
+  top: 43.7%;
   transform: rotate(-4deg);
   font-family: 'Caveat', 'Bradley Hand', 'Segoe Print', cursive;
   font-size: 1.3rem;
@@ -1589,8 +1589,8 @@
 
 .first-circle {
   position: absolute;
-  left: 23.4%;
-  top: 55.8%;
+  left: 24.4%;
+  top: 67.1%;
   width: 4.8%;
   aspect-ratio: 1;
   transform: translate(-50%, -50%) rotate(-8deg);
@@ -1612,10 +1612,10 @@
 
 .first-arrow {
   position: absolute;
-  left: 21.4%;
-  top: 35%;
+  left: 22.4%;
+  top: 51.9%;
   width: 3.2%;
-  height: 13%;
+  height: 9.6%;
   overflow: visible;
 }
 
