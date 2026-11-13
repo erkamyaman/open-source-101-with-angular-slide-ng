@@ -34,12 +34,13 @@ export default class DeckGlobalTop {
 
   section = computed(() => {
     let found = -1;
+    const isTr = this.lang() === 'tr';
+    const sectionSlide = this.no() + (isTr ? 1 : 0);
     SECTIONS.forEach((s, i) => {
-      if (this.no() >= s.from) found = i;
+      if (sectionSlide >= s.from) found = i;
     });
     if (found < 0) return null;
     const isBonus = SECTIONS[found].name === 'Bonus';
-    const isTr = this.lang() === 'tr';
     const name = isTr ? TR_NAMES[found] : SECTIONS[found].name;
     return { number: isBonus ? 'Bonus' : String(found + 1), name: isBonus ? (isTr ? 'Skill’ler' : 'Skills') : name };
   });

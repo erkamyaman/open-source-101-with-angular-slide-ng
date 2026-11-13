@@ -16,6 +16,7 @@ Enterprise open source’a nasıl katkı (contribution) vermeye başladım?<br>S
 ---
 layout: default
 class: who-slide
+disabled: true
 ---
 
 <div class="who-grid">
