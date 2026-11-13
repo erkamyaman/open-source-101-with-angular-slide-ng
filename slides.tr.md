@@ -27,7 +27,7 @@ class: who-slide
 
 <div>
 
-# Merhaba, ben erKam
+# <span style="font-size: 3.2rem; white-space: nowrap;">Merhaba, ben erKam</span>
 
 <pre class="who-code"><code><span class="c-brace">&#123;&#123;</span> <span class="c-name">erKam</span> <span class="c-pipe">|</span> <span class="c-fn">kæm</span> <span class="c-brace">&#125;&#125;</span>  <span class="c-dim">Döner kebab in developer form</span> 🌯</code></pre>
 
@@ -55,7 +55,7 @@ Kısa tut, sonra geç.
 
 <div class="bento" [class]="'s' + cs.level()">
   <div slide-ng-click class="b b1" [class.hot]="cs.n() === 1"><span class="n">1</span><p>Nasıl <span class="gt">başladım</span></p></div>
-  <div slide-ng-click class="b b2" [class.hot]="cs.n() === 2"><span class="n">2</span><p><span class="gt">Hangi PR’lar</span> merge oluyor?</p></div>
+  <div slide-ng-click class="b b2" [class.hot]="cs.n() === 2"><span class="n">2</span><p><span class="gt">Hangi PR’lar</span> mergeleniyor?</p></div>
   <div slide-ng-click class="b b3" [class.hot]="cs.n() === 3"><span class="n">3</span><p>Düzeltecek <span class="gt">bug’ları nasıl buluyorum?</span></p></div>
   <div slide-ng-click class="b b4" [class.hot]="cs.n() === 4"><span class="n">4</span><p><span class="gt">Büyük projelere</span> PR açmak</p></div>
   <div slide-ng-click class="b b5" [class.hot]="cs.n() >= 5"><span class="n">5</span><p>Sizin ilk <span class="gt">contribution’ınız</span></p></div>
@@ -191,7 +191,7 @@ disabled: true
 
 ---
 
-# Hangi PR’lar <span class="grad">merge oluyor?</span> <span class="title-sub">şu ana kadar <stat-value k="prs" /> PR, <stat-value k="commits" /> commit</span>
+# Hangi PR’lar <span class="grad">mergeleniyor?</span> <span class="title-sub">şu ana kadar <stat-value k="prs" /> PR, <stat-value k="commits" /> commit</span>
 
 <div class="merge-grid">
   <div slide-ng-click class="merge-col yes">
