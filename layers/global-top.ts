@@ -11,7 +11,7 @@ const SECTIONS = [
   { from: 27, name: 'Bonus' },
 ];
 
-const TR_NAMES = ['Nasıl başladım', 'Ne mergeleniyor?', 'Bug’ları nerede buluyorum?', 'Büyük projelere PR', 'İlk katkı', 'Bonus'];
+const TR_NAMES = ['Nasıl başladım', 'Neler mergeleniyor?', 'Bug’ları nerede buluyorum?', 'Büyük projelere PR', 'İlk katkı', 'Bonus'];
 
 // Port of global-top.vue: the footer (author, section, slide count, progress bar) on every slide
 // except the first two and the last three, plus the `mouse-live` class on <html>: hover effects

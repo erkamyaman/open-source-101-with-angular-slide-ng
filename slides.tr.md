@@ -207,7 +207,7 @@ class: statement-slide wide-title claude-program-slide
 class: compact-slide
 ---
 
-# Ne <span class="grad">mergeleniyor?</span> <span class="title-sub"><stat-value k="prs" /> PR, <stat-value k="commits" /> commit</span>
+# Neler <span class="grad">mergeleniyor?</span> <span class="title-sub"><stat-value k="prs" /> PR, <stat-value k="commits" /> commit</span>
 
 <div class="merge-grid">
   <div slide-ng-click class="merge-col yes">
