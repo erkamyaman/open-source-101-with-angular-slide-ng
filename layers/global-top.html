@@ -7,6 +7,9 @@
     @if (section(); as s) {
       <span class="deck-section">{{ s.number }} / {{ s.name }}</span>
     }
+    @if (printNo() === null) {
+      <slide-ng-timer class="deck-timer" />
+    }
     <span class="deck-count">{{ no() }} / {{ nav.total }}</span>
   </div>
 }

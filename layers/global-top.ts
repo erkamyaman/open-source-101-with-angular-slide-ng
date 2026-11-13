@@ -1,6 +1,7 @@
 import { Component, DestroyRef, ElementRef, afterNextRender, computed, effect, inject, signal } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { Nav } from 'slide-ng/lib/nav';
+import { SlideTimer } from 'slide-ng/builtin/slide-timer';
 
 const SECTIONS = [
   { from: 4, name: 'How I started' },
@@ -18,13 +19,14 @@ const TR_NAMES = ['Nasıl başladım', 'Ne göndermeli, ne geçmeli', 'Düzeltil
 // only turn on once the mouse really moves (24px), and turn off again on every slide or click change.
 @Component({
   selector: 'deck-global-top',
+  imports: [SlideTimer],
   templateUrl: './global-top.html',
 })
 export default class DeckGlobalTop {
   nav = inject(Nav);
   /** Slide of the PDF page this layer is drawn on (null on screen). Workaround: in print every page's
    *  layer injects the same Nav, whose no() is 1, so the footer would vanish from the PDF. */
-  private printNo = signal<number | null>(null);
+  protected printNo = signal<number | null>(null);
   /** The slide this footer describes: the printed page in PDF export, else the slide on screen. */
   no = computed(() => this.printNo() ?? this.nav.no());
   private root = inject(DOCUMENT).documentElement;

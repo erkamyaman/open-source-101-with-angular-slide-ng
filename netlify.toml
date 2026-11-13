@@ -11,6 +11,18 @@ to = "/.well-known/:splat"
 status = 200
 
 [[redirects]]
+from = "/tr"
+to = "/1?lang=tr"
+status = 302
+force = true
+
+[[redirects]]
+from = "/en"
+to = "/1?lang=en"
+status = 302
+force = true
+
+[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200

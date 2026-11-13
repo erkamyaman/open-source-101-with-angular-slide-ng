@@ -1555,6 +1555,14 @@
   white-space: nowrap;
 }
 
+.deck-timer {
+  margin-left: auto;
+  margin-right: 1rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
 .contrib-wrap {
   position: relative;
   width: 66%;
