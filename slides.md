@@ -75,9 +75,11 @@ Keep it short, then move on.
 
 <div class="cards cols-3">
   <div slide-ng-click class="card hot span3 with-flag"><div><p class="big">A <span class="grad">Turkish translation</span> of the Angular docs</p></div><img class="flag" src="/icons/tr.svg" alt="Turkish flag" /></div>
-  <div slide-ng-click class="card"><p class="big sm">Made for Turkish developers</p></div>
-  <div slide-ng-click class="card"><p class="big sm">It showed me the process works</p></div>
-  <div slide-ng-click class="card hot"><p class="k">Next</p><p class="txt">The first review, and when I realized I could keep doing this</p></div>
+</div>
+
+<div class="first-notes">
+  <p slide-ng-click>I started it for Turkish developers who wanted the docs in their language.</p>
+  <p slide-ng-click>It was the first time I saw the whole PR process, start to finish.</p>
 </div>
 
 <!--

@@ -14,6 +14,6 @@
     "format": "slide-ng format"
   },
   "dependencies": {
-    "@slide-ng/core": "^3.6.0"
+    "@slide-ng/core": "^3.7.0"
   }
 }

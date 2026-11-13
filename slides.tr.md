@@ -79,10 +79,12 @@ clicksStart: 1
 # İlk PR’ım
 
 <div class="cards cols-3">
-  <div slide-ng-click class="card hot span3 with-flag"><div><p class="big">Angular dokümanlarının <span class="grad">Türkçe çevirisi</span></p></div><img class="flag" src="/icons/tr.svg" alt="Türk bayrağı" /></div>
-  <div slide-ng-click class="card"><p class="big sm">Türkçe doküman okumak isteyenler için</p></div>
-  <div slide-ng-click class="card"><p class="big sm">PR sürecini ilk kez baştan sona gördüm</p></div>
-  <div slide-ng-click class="card hot"><p class="k">Sırada</p><p class="txt">İlk review nasıl geçti?</p></div>
+  <div slide-ng-click class="card hot span3 with-flag"><div><p class="big">Angular dokümantasyonunun <span class="grad">Türkçe çevirisi</span></p></div><img class="flag" src="/icons/tr.svg" alt="Türk bayrağı" /></div>
+</div>
+
+<div class="first-notes">
+  <p slide-ng-click>Türkçe doküman okumak isteyenler için başladım.</p>
+  <p slide-ng-click>PR sürecini ilk kez baştan sona burada gördüm.</p>
 </div>
 
 <!--

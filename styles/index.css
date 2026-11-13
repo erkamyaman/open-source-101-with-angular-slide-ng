@@ -1085,6 +1085,7 @@
 
 .card.with-flag .big {
   white-space: nowrap;
+  font-size: 2rem;
 }
 
 .flag-inline {
@@ -2371,4 +2372,18 @@ html.mouse-live .cards:has(.card:hover) .card.slidev-vclick-current:not(:hover) 
 
 .me-name {
   white-space: nowrap;
+}
+
+.first-notes {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 2.2rem;
+  max-width: 40rem;
+}
+
+.slidev-layout .first-notes p {
+  margin: 0;
+  font-size: 1.45rem;
+  line-height: 1.4;
+  color: var(--muted);
 }
