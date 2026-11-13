@@ -223,6 +223,8 @@ class: compact-slide
 </div>
 
 ---
+class: compact-slide
+---
 
 # <span class="grad">İş akışım</span>
 

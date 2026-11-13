@@ -219,6 +219,8 @@ disabled: true
 </div>
 
 ---
+class: compact-slide
+---
 
 # My <span class="grad">workflow</span>
 
@@ -230,6 +232,8 @@ disabled: true
   <div slide-ng-click class="docs-alert docs-alert-note span3"><carbon-bookmark class="alert-icon" /><p>Most findings are false positives. The survivors get ranked, and I read every PR locally before I send it.</p></div>
 </div>
 
+---
+class: compact-slide
 ---
 
 # Angular ships <span class="grad">skills</span> for your agent
@@ -253,6 +257,8 @@ disabled: true
   <div slide-ng-click class="card hot"><p class="k">While working</p><p class="big sm">The docs let me down</p><p class="txt">a broken link, a wrong example or a missing piece</p></div>
 </div>
 
+---
+class: compact-slide
 ---
 
 # Sending a PR to <span class="grad">enterprise</span> open source

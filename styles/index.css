@@ -1557,8 +1557,8 @@
 
 .contrib-wrap {
   position: relative;
-  width: 58%;
-  margin: 1rem auto 0;
+  width: 54%;
+  margin: 0.75rem auto 0;
 }
 
 .contrib-wrap .contrib-shot {
@@ -2113,4 +2113,8 @@ html.mouse-live .cards:has(.card:hover) .card.slidev-vclick-current:not(:hover) 
 
 .slidev-layout.compact-slide .merge-col .docs-pill {
   padding: 0.25rem 0.65rem;
+}
+
+.slidev-layout.compact-slide .docs-alert {
+  padding-block: 0.65rem;
 }
