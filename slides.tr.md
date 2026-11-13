@@ -49,6 +49,8 @@ Kısa tut, sonra geç.
 -->
 
 ---
+layout: default
+class: agenda-slide
 clicksStart: 1
 ---
 

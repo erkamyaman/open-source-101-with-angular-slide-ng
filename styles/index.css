@@ -345,7 +345,7 @@
   font-size: 0.85em;
 }
 
-.slidev-layout.who-slide {
+.slidev-layout.who-slide:has(.who-grid) {
   display: flex;
   align-items: center;
 }
