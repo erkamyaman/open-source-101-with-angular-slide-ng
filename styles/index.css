@@ -2128,5 +2128,8 @@ html.mouse-live .cards:has(.card:hover) .card.slidev-vclick-current:not(:hover) 
   width: 8rem;
   height: auto;
   margin-bottom: 0.75rem;
-  border-radius: 0.35rem;
+}
+
+.claude-name {
+  color: #d97757;
 }
