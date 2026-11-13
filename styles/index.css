@@ -1313,11 +1313,19 @@
   border-radius: 0.7rem;
 }
 
+.slidev-layout.statement-slide:has(.angie-pop-wrap) {
+  padding-right: 17rem;
+}
+
+.slidev-layout.statement-slide:has(.angie-pop-wrap) h1 {
+  font-size: 3.5rem;
+}
+
 .angie-pop-wrap {
   position: absolute;
-  top: 2.2rem;
+  top: 5rem;
   right: 2.4rem;
-  width: 210px;
+  width: 185px;
   pointer-events: none;
 }
 
