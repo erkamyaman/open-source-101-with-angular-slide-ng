@@ -1,12 +1,12 @@
 ---
 title: Angular ile Açık Kaynak 101
 info: |
-  Enterprise open source’a nasıl katkı vermeye başladım? Sen nereden başlayabilirsin?
+  Enterprise open source’a nasıl katkı (contribution) vermeye başladım? Sen nereden başlayabilirsin?
 ---
 
 # Açık Kaynak 101<br><img src="/angular_wordmark_gradient.png" width="2560" height="800" style="display: inline-block; height: 1.5em; width: auto; vertical-align: 0; margin: -0.4em 0 -0.4em -0.2em;" alt="Angular" /> ile
 
-Enterprise open source’a nasıl katkı vermeye başladım?<br>Sen nereden başlayabilirsin?
+Enterprise open source’a nasıl katkı (contribution) vermeye başladım?<br>Sen nereden başlayabilirsin?
 
 <div class="abs-br m-6 flex items-center gap-3 text-sm opacity-90">
   <img src="/erkamyaman.jpg" width="256" height="256" style="width: 40px; height: 40px;" class="rounded-full" alt="erKam" />
