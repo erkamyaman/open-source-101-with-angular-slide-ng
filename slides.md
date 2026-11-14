@@ -378,15 +378,18 @@ class: compact-slide
 
 # The whole <span class="grad">loop</span>
 
-```mermaid {layout:'dagre', scale:1.5, theme:'base', themeVariables:{primaryColor:'#141414', primaryTextColor:'#ffffff', primaryBorderColor:'#f11653', lineColor:'#c9a0ff', secondaryColor:'#141414', tertiaryColor:'#141414', edgeLabelBackground:'#000000', fontFamily:'Inter'}}
-flowchart LR
-  A[Find] --> B[Prove]
-  B --> C[Prepare]
-  C --> D[Open the PR]
-  D --> E{Review}
-  E -->|feedback| C
-  E -->|approved| F[Merged]
-```
+<div class="flow">
+<ol>
+  <li slide-ng-click><span class="flow-dot"></span><strong>Find</strong><span>a bug</span></li>
+  <li slide-ng-click><span class="flow-dot"></span><strong>Verify</strong><span>on your machine</span></li>
+  <li slide-ng-click><span class="flow-dot"></span><strong>Prepare</strong><span>a small change</span></li>
+  <li slide-ng-click><span class="flow-dot"></span><strong>Open a PR</strong><span>with a clear description</span></li>
+  <li slide-ng-click><span class="flow-dot"></span><strong>Review</strong><span>a maintainer reads it</span></li>
+  <li slide-ng-click class="flow-end"><span class="flow-dot"></span><strong>Merge</strong><span>your change is in</span></li>
+</ol>
+<svg slide-ng-click="5" class="flow-loop" viewBox="0 0 273 51" aria-hidden="true"><path d="M262 46 C 245 4, 28 4, 11 38" fill="none" stroke="#c9a0ff" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" /><polygon points="7.2,46.1 15.1,39.9 6.9,36.1" fill="#c9a0ff" /></svg>
+<span slide-ng-click="5" class="flow-loop-label">feedback</span>
+</div>
 
 ---
 
